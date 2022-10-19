@@ -1,0 +1,9 @@
+Komplexe Zahlen @complex
+########################
+
+Über den reellen Zahlen können Gleichungen wie $x^2=-1$ nicht gelöst werden, da keine Quadratwurzeln aus negativen Zahlen existieren. Deshalb erweitert man den Zahlbereich auf die sogenannten **komplexen Zahlen**, die wir später als Ausdrücke der Form $x+y\cdot\sqrt{-1}=x+y i$ mit $x,y \in \mathbb{R}$ darstellen werden.
+
+---
+EQUATION @myLabel
+a^2 + b^2 = c^2
+---
