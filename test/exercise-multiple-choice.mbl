@@ -1,0 +1,23 @@
+Multiple Choice
+###############
+
+---
+EXERCISE My Multiple Choice Exercise
+@text
+[x] a correct answer
+[ ] an incorrect answer
+---
+
+---
+EXERCISE My Random Multiple Choice Exercise
+@code
+let x = rand(1, 5);
+let y = rand(1, 5);
+let b = x > y;
+@text
+[$b$] check this if $ x > y $
+[ ] an incorrect answer
+Second multiple choice:
+[x] correct
+[ ] incorrect
+---
