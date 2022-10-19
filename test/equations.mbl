@@ -1,0 +1,39 @@
+Equations
+###########
+
+Inline Equations
+================
+
+% variant 1
+
+An inline equation $x^2+y^2+\sqrt(z)$.         
+
+% variant 2
+
+An inline equation [x^2+y^2+\sqrt(z)]@equation.
+
+
+Equations
+=========
+
+---
+EQUATION @myLabel
+a^2 + b^2 = c^2
+---
+
+Refer to @myLabel.    %displayed as "Refer to Eq. (1)"
+
+Abbreviations
+=============
+
+Equations may be written in plain TeX code. We introduce some (optional) abbreviations for simpler notataion.
+
+Matrices
+--------
+
+---
+EQUATION
+\MAT(1, 1, -2, 0; -2, 0, 1, 1) \cdot
+\MAT(-3, 0, 1; 0, 1, 0; 1, 1, 1; 2, 0, 1) =
+\MAT(-5, -1, -1; 9, 1, 0)
+---
