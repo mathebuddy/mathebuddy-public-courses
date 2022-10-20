@@ -1,9 +1,0 @@
-Tables
-######
-
----
-TABLE Negation
-$A$ # $\not A$
-w # f
-f # w
----
