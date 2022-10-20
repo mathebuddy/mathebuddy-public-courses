@@ -1,0 +1,13 @@
+Plots
+#####
+
+---
+PLOT My plot @plotlabel
+axis x from -3 to 3 tics 2 label "x"
+axis y from -1 to 5 tics 2 label "y"
+grid step 1
+plot x^2
+coord -1 1 label left
+coord 2 4 label right
+coord 0 0 label bottom
+---
