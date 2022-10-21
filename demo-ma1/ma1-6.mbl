@@ -1,0 +1,459 @@
+Lineare Algebra
+###############
+
+---
+EXERCISE Vektorrechnung
+@code
+let lambda = rand(-9,9);
+let u:v = rand<3,1>(-9,9);
+let w = u + v;
+let x = lambda * u;
+@text
+Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $RR^3$. Berechne:
+TODO: input rows = resizable
+- $ "u"+"v" = $ #w
+- $ lambda "u" = $ #x
+---
+
+---
+EXERCISE Einheitsvektor
+@code
+let k = rand(1,3);
+let v = zeros(3,1);
+v[k,1] = 1;
+TODO: input rows = resizable
+@text
+Geben Sie den Einheitsvektor $e_(k)$ im $\RR^3$ an:
+#v
+---
+
+---
+EXERCISE Rechenregeln
+@text
+Welche der folgenden Rechenregeln zur Addition und skalaren Multiplikation im $\RR^n$ sind korrekt?
+[x] $ (u+v)+w = u+(v+w) ~~ \forall u, v, w in \RR^n $
+[x] $ 1 * v = v ~~ \forall v in V $
+[x] $ (lambda + mu) v = lambda v + mu v ~~ \forall lambda, mu \in \RR, ~~ v \in \RR^n $
+[x] $ v + w = w + v ~~ \forall v, w \in \RR^n $
+---
+
+---
+EXERCISE Kollinear
+@code
+let a:b = rand(-4,4);
+let ux:uy = rand(-3,3);
+let u1 = [[ux],[uy]];
+let v1 = a * u1;
+let ux:uy = rand(-3,3);
+let u2 = [[ux],[uy]];
+let v2 = [[ux*b],[uy*(-b)]];
+@text
+Welche der folgenden Ortsvektoren sind **kollinear**?
+[x] $ u=u1 $ und $ v=v1 $
+[ ] $ u=u2 $ und $ v=v2 $
+---
+
+---
+EXERCISE Skalarprodukt
+@code
+let u:v = rand<3,1>(-5,5);
+let s = dot(u,v);
+@text
+Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\RR^3$.
+Berechne das **Skalarprodukt** $ "u" \cdot "v" = $ #s
+---
+
+---
+EXERCISE Eukidische Norm
+@text
+Sei $u=[[u_1],[...],[u_n]] in \RR^n$. 
+Wie ist die **euklidische Norm** definiert?
+(x) $ sqrt(u_1^2 + u_2^2 + ... + u_n^2) $
+( ) $ |u_1| + |u_2| + ... + |u_n| $
+( ) $ max_(i=1,...,n) |u_i| $
+---
+
+---
+EXERCISE Eukidische Norm
+@code 
+let ux:uy:uz = rand(-5,5);
+let u = [[ux],[uy],[uz]];
+let en = sqrt(ux*ux + uy*uy + uz*uz);
+@text
+Sei $ "u"=u in \RR^3 $. Berechne die **euklidische Norm**:
+- $ ||"u"|| = $ #en
+*Hinweis: Schreiben Sie (sofern nötig) für $\sqrt{x}$ `sqrt(x)`.*
+---
+
+---
+EXERCISE Winkel zwischen Vektoren
+@code
+let a:b = rand(3,8);
+let u:v = zeros<3,1>();
+u[1,1] = a;
+v[1,1] = 3;
+v[3,1] = 4;
+a = acos( dot(u, v) / ( norm2(u) * norm2(v) ) );
+@text
+Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\RR^3$.
+Berechnen Sie den **Winkel** zwischen den Vektoren $"u"$ und $"v"$:
+- $ #a $
+*Hinweis: Schreiben Sie (ja nach Bedarf) `asin(x)`, `acos(x)` für die Arkusfunktionen.*
+---
+
+--
+EXERCISE Orthogonale Vektoren
+@code
+let u:v:w:x:y:z = rand<2,1>(-1,1);
+let uv = dot(u,v) == 0;
+let wx = dot(w,x) == 0;
+let yz = dot(y,z) == 0;
+@text
+Welche der folgenden Vektoren im $\RR^2$ sind **orthogonal**?
+[uv] $u$ und $v$
+[wx] $w$ und $x$
+[yz] $y$ und $z$
+---
+
+---
+EXERCISE Projektion
+@code
+let w:v = rand<2,1>(-2,2);
+let p = dot(v,w) / dot(v,v) * v;
+TODO input rows = resizable;
+@text
+Berechne die **Projektion** des Vektors $w$ auf den Vektor $v$:
+#p
+---
+
+---
+EXERCISE Vektorprodukt
+@text
+In welchen der folgenden euklidischen Räumen kann das Vektorprodukt bestimmt werden?
+[ ] $\RR^2$
+[x] $\RR^3$
+[ ] $\RR^4$
+---
+
+---
+EXERCISE Vektorprodukt
+@code
+let u:v = rand<3,1>(-2,2);
+let uxv = cross(u, v);
+TODO input rows = resizable;
+@text
+Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\RR^3$. Bestimme das Vektorprodukt von $"u"$ und $"v"$:
+- $"u" xx "v" =$ #uxv
+---
+
+---
+EXERCISE Matrizenoperationen
+@code
+let A:B = rand<3,3>(1,3);
+let C = A - B;
+TODO input rows = resizable;
+TODO input cols = resizable;
+@text
+Berechne $ A - B = $ #C
+---
+
+---
+EXERCISE Matrizenoperationen
+@code
+let A = rand<3,3>(2,5);
+let b = rand(2,5);
+let B = b * A;
+TODO input rows = resizable;
+TODO input cols = resizable;
+@text
+Berechne $ a * A = $ #B
+---
+
+---
+EXERCISE Transponierte Matrix
+@code
+let A = rand<3,2>(1,3);
+let B = A^T;
+TODO input rows = resizable;
+TODO input cols = resizable;
+@text
+Bestimme $ A^T = $ #B
+---
+
+---
+EXERCISE Matrizenoperationen
+@code
+let A:B = rand<2,2>(1,3);
+let C = A * B;
+TODO input rows = resizable;
+TODO input cols = resizable;
+@text
+Berechne $ A*B = $ #C
+---
+
+---
+EXERCISE Matrizenoperationen
+@code
+let A:C = rand<2,1>(1,3);
+let B = rand<2,2>(1,3);
+let D = (A + B^T * C)^T;
+TODO input rows = resizable;
+TODO input cols = resizable;
+@text
+Berechne $ (A + B^T * C)^T = $ #D
+---
+
+---
+EXERCISE Matrizenoperationen
+@code
+let MA = rand<2,3>(-5,5);
+let MB = rand<3,2>(-5,5);
+let MC = rand<2,2>(-5,5);
+@text
+Gegeben seien die folgenden Matrizen:
+- $ A=MA, B=MB, C=MC $
+Welche der folgenden Operationen sind erlaubt?
+[x] $ A * B $
+[ ] $ A + B $
+[ ] $ A^T * B $
+[ ] $ A * B^T $
+[x] $ A * B - C $
+[x] $ (A * B)^T + C $
+---
+
+---
+EXERCISE Lineare Gleichungssysteme
+@code
+
+    a11, a12, a21, a22 in { 2, 3, 4 }
+    b1, b2 in { 1, 2, 3 }
+    a21 = 0
+    A = [ [a11, a12], [a21, a22] ]
+    b = [ [b1], [b2] ]
+    x = linsolve(A, b)
+
+    input rows = resizable
+    input cols = resizable
+
+Gegeben ist das folgende __lineare Gleichungssystem (LGS)__:
+
+* $ a11 x_1 + a12 x_2 = b1 $
+* $ a22 x_2 = b2 $
+
+Schreiben Sie das LGS in __Matrizenschreibweise__ $ "A" * "x" = "b" $:
+* $ "A" = #A $
+
+    input cols = static
+
+* $ "b" = #b $
+
+Das LGS liegt bereits in Dreiecksform vor. Bestimmen Sie den __Lösungsvektor__ $"x"$:
+* $ "x" = #x $
+
+
+%%%
+
+
+Lineare Gleichungssysteme
+
+    A in MM(3 x 3 | { 1, 2, 3 } )
+    b in MM(3 x 1 | { 0, 1 } )
+    homogen = is_zero(b)
+
+Gegeben sei das folgende LGS in Matrizenschreibweise:
+$A*x = b$
+
+Ist die folgende Aussage korrekt?
+[homogen] Das LGS ist __homogen__.
+
+
+
+%%%
+
+
+Lösungsmenge
+
+Ein lineares Gleichungssystem ist durch den Gauß-Algorithmus bereits in Dreiecksform gebracht worden. Die erweiterte Koeffizientenmatrix sieht folgendermaßen aus:
+
+    a = { -3, -2, -1, 1, 2, 3 }
+    A in MM(3 x 3 | a )
+    b in MM(3 x 1 | a )
+    A = triu(A)
+
+$ augmented(A|b) $
+
+Welche Aussage über die __Lösungsmenge__ ist korrekt?
+(x) Es gibt eine eindeutige Lösung $x in RR^n$.
+( ) Es gibt keine Lösung.
+( ) Die Lösungsmenge kann mit einer freien Variable beschrieben werden.
+
+
+%%%
+
+
+Lösungsmenge
+
+Ein lineares Gleichungssystem ist durch den Gauß-Algorithmus bereits in Dreiecksform gebracht worden. Die erweiterte Koeffizientenmatrix sieht folgendermaßen aus:
+
+    a = { -3, -2, -1, 1, 2, 3 }
+    A in MM(3 x 3 | a )
+    b in MM(3 x 1 | a )
+    A = triu(A)
+    A[3,3] = 0
+    b[3,1] = 0
+
+$ augmented(A|b) $
+
+Welche Aussage über die __Lösungsmenge__ ist korrekt?
+( ) Es gibt eine eindeutige Lösung $x in RR^n$.
+( ) Es gibt keine Lösung.
+(x) Die Lösungsmenge kann mit einer freien Variable beschrieben werden.
+
+
+%%%
+
+
+Lösungsmenge
+
+Ein lineares Gleichungssystem ist durch den Gauß-Algorithmus bereits in Dreiecksform gebracht worden. Die erweiterte Koeffizientenmatrix sieht folgendermaßen aus:
+
+    a = { -3, -2, -1, 1, 2, 3 }
+    A in MM(3 x 3 | a )
+    b in MM(3 x 1 | a )
+    A = triu(A)
+    A[3,3] = 0
+
+$ augmented(A|b) $
+
+Welche Aussage über die __Lösungsmenge__ ist korrekt?
+( ) Es gibt eine eindeutige Lösung $x in RR^n$.
+(x) Es gibt keine Lösung.
+( ) Die Lösungsmenge kann mit einer freien Variable beschrieben werden.
+
+
+%%%
+
+
+Gauß-Algorithmus
+
+Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des __Gauß-Algorithmus__:
+
+    a = { 1, 2, 4 }
+    A in MM(2 x 2 | a, invertible )
+    b in MM(2 x 1 | a )
+    x = linsolve(A,b)
+
+$ augmented(A|b) $
+
+Lösungsvektor: $"x"=#x$
+
+
+%%%
+
+
+Gauß-Algorithmus
+
+Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des __Gauß-Algorithmus__:
+
+    a = { 1, 2, 4 }
+    A in MM(3 x 3 | a, invertible )
+    b in MM(3 x 1 | a )
+    x = linsolve(A,b)
+
+$ augmented(A|b) $
+
+Lösungsvektor: $"x"=#x$
+
+
+%%%
+
+
+Gauß-Algorithmus
+
+Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des __Gauß-Algorithmus__:
+
+    a = { 0, 1, 2 }
+    A in MM(4 x 4 | a, invertible )
+    b in MM(4 x 1 | a )
+    x = linsolve(A,b)
+
+$ augmented(A|b) $
+
+Lösungsvektor: $"x"=#x$
+
+
+%%%
+
+
+Lineare Unabhängigkeit
+
+	a, b, c, d, e, f, g, h, _i in { 0, 1, 2 }
+
+	v1 = [[a],[b]]
+	v2 = [[c],[d]]
+	A = [[a,c],[b,d]]
+	q1 = det(A) != 0
+
+	a = (a + 1) mod 2
+	v3 = [[a],[b]]
+	v4 = [[c],[d]]
+	A = [[a,c],[b,d]]
+	q2 = det(A) != 0
+
+	v5 = [[a],[b],[c]]
+	v6 = [[d],[e],[f]]
+	v7 = [[g],[h],[_i]]
+	A = [[a,d,g],[b,e,h],[c,f,_i]]
+	q3 = det(A) != 0
+
+Welche der unten stehenden Vektoren sind __linear unabhängig__?
+
+[q1] $ v1, v2 $
+[q2] $ v3, v4 $
+[q3] $ v5, v6, v7 $
+
+
+%%%
+
+
+Rang
+
+	a = { 0, 1, 2 }
+	A in MM( 3 x 3 | a )
+	r = rank(A)
+
+Sei $ "A" = A $ eine 3 x 3 Matrix über $ RR $.
+Bestimmen Sie den __Rang__:
+
+* $ rg("A") = #r $
+
+
+%%%
+
+
+Inverse Matrix
+
+	a = { 0, 1, 2 }
+	A in MM( 3 x 3 | a, invertible )
+	iA = inv(A)
+
+Berechnen Sie die __inverse__ Matrix:
+
+* $ A^(-1) = #iA $
+
+
+%%%
+
+
+Determinante
+
+	a = { -5, -4, ..., 5 }
+	A in MM( 3 x 3 | a )
+	A[1,1] = 0
+	A[1,2] = 0
+	d = det(A)
+
+Sei $ "A" = A $ eine 3 x 3 Matrix über $ RR $.
+Berechnen Sie die __Determinante__:
+
+* $ det("A") = #d $
