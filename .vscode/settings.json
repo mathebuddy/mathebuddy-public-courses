@@ -1,13 +1,25 @@
 {
   "cSpell.words": [
+    "Arkusfunktionen",
     "Cosinus",
+    "Eukidische",
     "forall",
     "Geradensteigung",
     "infty",
+    "Integrationsvariable",
+    "Koeffizientenmatrix",
+    "linksgekrümmt",
+    "linsolve",
     "mapsto",
     "mathe",
+    "Matrizenoperationen",
+    "Matrizenschreibweise",
+    "Partialbruchzerlegung",
+    "rechtsgekrümmt",
     "surjektiv",
-    "Surjektivität"
+    "Surjektivität",
+    "Taylorpolynom",
+    "triu"
   ],
   "cSpell.language": "en,de-de"
 }
