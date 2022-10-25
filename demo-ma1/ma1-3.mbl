@@ -195,6 +195,6 @@ EXERCISE Asymptote
 @code
 let m:b:c:d = rand(2,8);
 @text
-Bestimmen Sie die Asymptote $ y = "m" \cdot x+"b" $, welche die Funktion $ f(x) = m \cdot x + b - (c \cdot x)/(d \cdot x^2) $ für $x \to \infty$ annährt:
+Bestimmen Sie die Asymptote $ y = "m" \cdot x+"b" $, welche die Funktion $ f(x) = m \cdot x + b - (c \cdot x)/(d \cdot x^2) $ für $x \to \infty$ annähert:
 * $"m"=$ #m und $"b"=$ #b.
 ---
