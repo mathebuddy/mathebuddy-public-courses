@@ -227,162 +227,135 @@ EXERCISE Lineare Gleichungssysteme
 let A = rand<2,2>(2,4);
 let b = rand<2,1>(1,3);
 A[1,0] = 0;
+let a11 = A[0,0];
+let a12 = A[0,1];
+let a21 = A[1,0];
+let a22 = A[1,1];
+let b1 = b[0];
+let b2 = b[0];
 x = linsolve(A, b);
 input rows = resizable;
 input cols = resizable;
+TODO input cols = static
 @text
-Gegeben ist das folgende __lineare Gleichungssystem (LGS)__:
+Gegeben ist das folgende **lineare Gleichungssystem (LGS)**:
+- $ a11 x_1 + a12 x_2 = b1 $
+- $ a22 x_2 = b2 $
+Schreiben Sie das LGS in **Matrizenschreibweise** $ "A" \cdot "x" = "b" $:
+- $ "A" = $ #A
+- $ "b" = $ #b
+Das LGS liegt bereits in Dreiecksform vor. Bestimmen Sie den **Lösungsvektor** $"x"$:
+- $ "x" = $ #x
+---
 
-
-* $ a11 x_1 + a12 x_2 = b1 $
-* $ a22 x_2 = b2 $
-
-Schreiben Sie das LGS in __Matrizenschreibweise__ $ "A" * "x" = "b" $:
-* $ "A" = #A $
-
-    input cols = static
-
-* $ "b" = #b $
-
-Das LGS liegt bereits in Dreiecksform vor. Bestimmen Sie den __Lösungsvektor__ $"x"$:
-* $ "x" = #x $
-
-
-%%%
-
-
-Lineare Gleichungssysteme
-
-    A in MM(3 x 3 | { 1, 2, 3 } )
-    b in MM(3 x 1 | { 0, 1 } )
-    homogen = is_zero(b)
-
+---
+EXERCISE Lineare Gleichungssysteme
+@code
+let A = rand<3,3>(1,3);
+let b = rand<3,1>(0,1);
+let homogen = is_zero(b);
+@text
 Gegeben sei das folgende LGS in Matrizenschreibweise:
-$A*x = b$
-
+$ A*x = b$
 Ist die folgende Aussage korrekt?
-[homogen] Das LGS ist __homogen__.
+[$homogen$] Das LGS ist **homogen**.
+---
 
-
-
-%%%
-
-
-Lösungsmenge
-
+---
+EXERCISE Lösungsmenge
+@code
+let A = randZ<3,3>(-3,3);
+let b = randZ<3,1>(-3,3);
+A = triu(A);
+@text
 Ein lineares Gleichungssystem ist durch den Gauß-Algorithmus bereits in Dreiecksform gebracht worden. Die erweiterte Koeffizientenmatrix sieht folgendermaßen aus:
-
-    a = { -3, -2, -1, 1, 2, 3 }
-    A in MM(3 x 3 | a )
-    b in MM(3 x 1 | a )
-    A = triu(A)
-
 $ augmented(A|b) $
-
-Welche Aussage über die __Lösungsmenge__ ist korrekt?
-(x) Es gibt eine eindeutige Lösung $x in RR^n$.
+Welche Aussage über die **Lösungsmenge** ist korrekt?
+(x) Es gibt eine eindeutige Lösung $x \in \RR^n$.
 ( ) Es gibt keine Lösung.
 ( ) Die Lösungsmenge kann mit einer freien Variable beschrieben werden.
+---
 
-
-%%%
-
-
-Lösungsmenge
-
+---
+EXERCISE Lösungsmenge
+@code
+let A = randZ<3,3>(-3,3);
+let b = randZ<3,1>(-3,3);
+A = triu(A);
+A[2,2] = 0;
+b[2,0] = 0;
+@text
 Ein lineares Gleichungssystem ist durch den Gauß-Algorithmus bereits in Dreiecksform gebracht worden. Die erweiterte Koeffizientenmatrix sieht folgendermaßen aus:
-
-    a = { -3, -2, -1, 1, 2, 3 }
-    A in MM(3 x 3 | a )
-    b in MM(3 x 1 | a )
-    A = triu(A)
-    A[3,3] = 0
-    b[3,1] = 0
-
 $ augmented(A|b) $
-
-Welche Aussage über die __Lösungsmenge__ ist korrekt?
-( ) Es gibt eine eindeutige Lösung $x in RR^n$.
+Welche Aussage über die **Lösungsmenge** ist korrekt?
+( ) Es gibt eine eindeutige Lösung $x \in \RR^n$.
 ( ) Es gibt keine Lösung.
 (x) Die Lösungsmenge kann mit einer freien Variable beschrieben werden.
+---
 
-
-%%%
-
-
-Lösungsmenge
-
+---
+EXERCISE Lösungsmenge
+@code
+let A = randZ<3,3>(-3,3);
+let b = randZ<3,1>(-3,3);
+A = triu(A);
+A[0,0] = 0;
+@text
 Ein lineares Gleichungssystem ist durch den Gauß-Algorithmus bereits in Dreiecksform gebracht worden. Die erweiterte Koeffizientenmatrix sieht folgendermaßen aus:
-
-    a = { -3, -2, -1, 1, 2, 3 }
-    A in MM(3 x 3 | a )
-    b in MM(3 x 1 | a )
-    A = triu(A)
-    A[3,3] = 0
-
 $ augmented(A|b) $
-
-Welche Aussage über die __Lösungsmenge__ ist korrekt?
-( ) Es gibt eine eindeutige Lösung $x in RR^n$.
+Welche Aussage über die **Lösungsmenge** ist korrekt?
+( ) Es gibt eine eindeutige Lösung $x \in \RR^n$.
 (x) Es gibt keine Lösung.
 ( ) Die Lösungsmenge kann mit einer freien Variable beschrieben werden.
+---
 
-
-%%%
-
-
-Gauß-Algorithmus
-
-Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des __Gauß-Algorithmus__:
-
-    a = { 1, 2, 4 }
-    A in MM(2 x 2 | a, invertible )
-    b in MM(2 x 1 | a )
-    x = linsolve(A,b)
-
+---
+EXERCISE Gauß-Algorithmus
+@code
+let A = zeros(2,2);
+do {
+    A = randZ<2,2>(1,4);
+} while(is_invertible(A) == false);
+let b = randZ<2,1>(1,4);
+let x = linsolve(A, b);
+@text
+Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des **Gauß-Algorithmus**:
 $ augmented(A|b) $
+Lösungsvektor: $"x"=$ #x
+---
 
-Lösungsvektor: $"x"=#x$
-
-
-%%%
-
-
-Gauß-Algorithmus
-
-Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des __Gauß-Algorithmus__:
-
-    a = { 1, 2, 4 }
-    A in MM(3 x 3 | a, invertible )
-    b in MM(3 x 1 | a )
-    x = linsolve(A,b)
-
+---
+EXERCISE Gauß-Algorithmus
+@code
+let A = zeros(3,3);
+do {
+    A = randZ<3,3>(1,4);
+} while(is_invertible(A) == false);
+let b = randZ<3,1>(1,4);
+let x = linsolve(A, b);
+@text
+Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des **Gauß-Algorithmus**:
 $ augmented(A|b) $
+Lösungsvektor: $"x"=$ #x
+---
 
-Lösungsvektor: $"x"=#x$
-
-
-%%%
-
-
-Gauß-Algorithmus
-
-Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des __Gauß-Algorithmus__:
-
-    a = { 0, 1, 2 }
-    A in MM(4 x 4 | a, invertible )
-    b in MM(4 x 1 | a )
-    x = linsolve(A,b)
-
+---
+EXERCISE Gauß-Algorithmus
+@code
+let A = zeros(4,4);
+do {
+    A = randZ<4,4>(1,4);
+} while(is_invertible(A) == false);
+let b = randZ<4,1>(1,4);
+let x = linsolve(A, b);
+@text
+Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des **Gauß-Algorithmus**:
 $ augmented(A|b) $
+Lösungsvektor: $"x"=$ #x
+---
 
-Lösungsvektor: $"x"=#x$
-
-
-%%%
-
-
-Lineare Unabhängigkeit
+---
+EXERCISE Lineare Unabhängigkeit
 
 	a, b, c, d, e, f, g, h, _i in { 0, 1, 2 }
 
