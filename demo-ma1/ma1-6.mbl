@@ -356,33 +356,32 @@ Lösungsvektor: $"x"=$ #x
 
 ---
 EXERCISE Lineare Unabhängigkeit
+@code
+let a:b:c:d:e:f:g:h:_i = rand(0,2);
 
-	a, b, c, d, e, f, g, h, _i in { 0, 1, 2 }
+let v1 = matrix(a; b);
+let v2 = matrix(c; d);
+let A = matrix(a,c; b,d);
+let q1 = det(A) != 0;
 
-	v1 = [[a],[b]]
-	v2 = [[c],[d]]
-	A = [[a,c],[b,d]]
-	q1 = det(A) != 0
+a = (a + 1) mod 2
+let v3 = matrix(a; b);
+let v4 = matrix(c; d);
+let A = matrix(a,c; b,d);
+let q2 = det(A) != 0;
 
-	a = (a + 1) mod 2
-	v3 = [[a],[b]]
-	v4 = [[c],[d]]
-	A = [[a,c],[b,d]]
-	q2 = det(A) != 0
+let v5 = matrix(a; b; c);
+let v6 = matrix(d; e; f);
+let v7 = matrix(g; h; _i);
 
-	v5 = [[a],[b],[c]]
-	v6 = [[d],[e],[f]]
-	v7 = [[g],[h],[_i]]
-	A = [[a,d,g],[b,e,h],[c,f,_i]]
-	q3 = det(A) != 0
-
-Welche der unten stehenden Vektoren sind __linear unabhängig__?
-
-[q1] $ v1, v2 $
-[q2] $ v3, v4 $
-[q3] $ v5, v6, v7 $
-
-
+let A = matrix(a,d,g; b,e,h; c,f,_i);
+let q3 = det(A) != 0;
+@text
+Welche der unten stehenden Vektoren sind **linear unabhängig**?
+[$q1$] $ v1, v2 $
+[$q2$] $ v3, v4 $
+[$q3$] $ v5, v6, v7 $
+---
 
 ----
 EXERCISE Rang
