@@ -2,6 +2,7 @@
   "cSpell.words": [
     "Arkusfunktionen",
     "Cosinus",
+    "Erzeugendensysteme",
     "Eukidische",
     "Exponentialform",
     "forall",
@@ -16,13 +17,16 @@
     "Matrizenoperationen",
     "Matrizenschreibweise",
     "notin",
+    "Orthogonalbasis",
+    "Orthonormalbasis",
     "Partialbruchzerlegung",
     "rechtsgekrümmt",
     "setminus",
     "surjektiv",
     "Surjektivität",
     "Taylorpolynom",
-    "triu"
+    "triu",
+    "xgcd"
   ],
   "cSpell.language": "en,de-de"
 }
