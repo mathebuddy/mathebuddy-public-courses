@@ -2,6 +2,7 @@
   "cSpell.words": [
     "Arkusfunktionen",
     "Cosinus",
+    "Definitheit",
     "Erzeugendensysteme",
     "Eukidische",
     "Exponentialform",
@@ -10,12 +11,14 @@
     "infty",
     "Integrationsvariable",
     "Koeffizientenmatrix",
+    "Komponentenfunktionen",
     "linksgekrümmt",
     "linsolve",
     "mapsto",
     "mathe",
     "Matrizenoperationen",
     "Matrizenschreibweise",
+    "nabla",
     "notin",
     "Orthogonalbasis",
     "Orthonormalbasis",
@@ -26,7 +29,8 @@
     "Surjektivität",
     "Taylorpolynom",
     "triu",
-    "xgcd"
+    "xgcd",
+    "zmax"
   ],
   "cSpell.language": "en,de-de"
 }
