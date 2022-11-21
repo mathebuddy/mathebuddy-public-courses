@@ -46,7 +46,7 @@ EXERCISE Mengen
 @code
 let a/b/c = rand(1,10);
 let x = max(a,b,c) + 4;
-let A = set(a,b,c)
+let A = set(a,b,c);
 @text
 Gegeben Sei die Menge $"A"=A$. Welche der folgenden Aussagen sind wahr?
 [x] $ a \in "A" $
@@ -100,7 +100,7 @@ Berechne $\prod_{i=1}^n a$:
 EXERCISE Fakultät
 @code
 let a = rand(3,6);
-let f = a!;
+let f = fac(a);
 @text
 Gebe $a!$ wertmäßig an:
 #f
@@ -120,7 +120,7 @@ Bestimme den Binomialkoeffizienten $\VEC(n,k)$ mit Hilfe des **Pascalschen Dreie
 ---
 EXERCISE Intervalle reeller Zahlen
 @text
-Seien $ a, b \in \RR $.
+Seien $ a, b \in \R $.
 Wähle die richtigen Antworten aus:
 [x] $ [a, b] $ ist ein geschlossenes Intervall
 [x] $ [a, b[ $ ist ein halboffenes Intervall
@@ -131,9 +131,9 @@ Wähle die richtigen Antworten aus:
 ---
 EXERCISE Supremum, Infimum
 @text
-Sei $X \subset \RR$.
-* $M \in \RR$ heißt **Supremum** von $X$, falls $M$ eine #"obere" Schranke ist und keine kleinere #"obere" Schranke existiert.
-* $M \in \RR$ heißt **Infimum** von $X$, falls $m$ eine #"untere" Schranke ist und keine größere #"untere" Schranke existiert.
+Sei $X \subset \R$.
+* $M \in \R$ heißt **Supremum** von $X$, falls $M$ eine #"obere" Schranke ist und keine kleinere #"obere" Schranke existiert.
+* $M \in \R$ heißt **Infimum** von $X$, falls $m$ eine #"untere" Schranke ist und keine größere #"untere" Schranke existiert.
 
 Füllen Sie den Lückentext aus.
 ---
@@ -142,7 +142,7 @@ Füllen Sie den Lückentext aus.
 EXERCISE Beschränkte Mengen
 @code
 let a = rand(-5,-2);
-let b := a + 3;
+let b = a + 3;
 let x/y = rand(1,3);
 let c = b + x;
 let d = c + y;
@@ -186,9 +186,9 @@ EXERCISE Aussagenlogik
 let a:b:c:d = rand(3,5);
 @text
 Welche der folgenden Ausdrücke sind **wahre Aussagen**?
-[ ] Die Menge $M=\{k \in \NN | k=2 m text( und ) m>3}$ hat 3 Elemente.
+[ ] Die Menge $M=\{k \in \N | k=2 m text( und ) m>3}$ hat 3 Elemente.
 [ ] $a + b * c$.
-[x] $\exists x \in \ZZ ~~ x < 0$
+[x] $\exists x \in \z ~~ x < 0$
 [x] Die Gleichung $a x + c = d$ besitzt genau eine Lösung.
 ---
 
@@ -196,10 +196,10 @@ Welche der folgenden Ausdrücke sind **wahre Aussagen**?
 EXERCISE Aussagenlogik
 @text
 Welche der folgenden Aussagen sind wahr?
-[ ]   $ \exists x \in \RR ~~ x < x  $
-[x]   $ \forall y \in \ZZ ~~ y^2 >= 0 $
-[ ]   $ \forall z \in \RR ~~ (z <= 0  \land  z > 0) $
-[x]   $ \forall z \in \RR ~~ (z <= 0  \lor  z > 0) $
+[ ]   $ \exists x \in \R ~~ x < x  $
+[x]   $ \forall y \in \z ~~ y^2 >= 0 $
+[ ]   $ \forall z \in \R ~~ (z <= 0  \land  z > 0) $
+[x]   $ \forall z \in \R ~~ (z <= 0  \lor  z > 0) $
 ---
 
 ---
@@ -208,7 +208,7 @@ EXERCISE Injektivität, Surjektivität, Bijektivität
 let a = rand(2,10);
 @text
 Betrachten Sie die folgende Abbildung und wählen Sie die richtigen Antworten aus:
-$ f : \RR \to [a,\infty[, ~~  f(x) = x^2 + a $
+$ f : \R \to [a,\infty[, ~~  f(x) = x^2 + a $
 [ ] $f$ ist injektiv.
 [x] $f$ ist surjektiv.
 [ ] $f$ ist bijektiv.
@@ -219,7 +219,7 @@ EXERCISE Verkettung von Funktionen
 @code
 let a:b:c = rand(2,5);
 @text
-Sei  $ f : \RR \to \RR, f(x) = a*x + b $ und $ g : \RR \to \RR, g(x) = x^c $.
+Sei  $ f : \R \to \R, f(x) = a*x + b $ und $ g : \R \to \R, g(x) = x^c $.
 Wählen Sie die richtige Antwort aus:
 (x) $ (g \circ f)(x) = (a*x + b)^c $
 ( ) $ (g \circ f)(x) = a*x^c + b $
@@ -240,7 +240,7 @@ EXERCISE Beschränktheit
 @code
 let a = rand(2,5);
 @text
-Sei $ f : \RR -> \RR, x \mapsto (x+a)^2 $.
+Sei $ f : \R -> \R, x \mapsto (x+a)^2 $.
 Wählen Sie die richtigen Antworten aus:
 [x] $f$ ist nach **unten beschränkt**.
 [ ] $f$ ist nach **oben beschränkt**.
@@ -252,10 +252,10 @@ EXERCISE Monotonie
 let a:b:c:d = rand(2,5);
 @text
 Wählen Sie die richtigen Antworten aus:
-[ ] $ f : \RR \to \RR, f(x)=a $ ist **monoton wachsend**.
-[x] $ f : \RR \to \RR, f(x)=b x + c $ ist **streng monoton wachsend**.
-[ ] $ f : \RR \to \RR, f(x)=|x| $ ist **streng monoton wachsend**.
-[x] $ f : \RR \to \RR, f(x)=-x^3-x-d $ ist **streng monoton fallend**.
+[ ] $ f : \R \to \R, f(x)=a $ ist **monoton wachsend**.
+[x] $ f : \R \to \R, f(x)=b x + c $ ist **streng monoton wachsend**.
+[ ] $ f : \R \to \R, f(x)=|x| $ ist **streng monoton wachsend**.
+[x] $ f : \R \to \R, f(x)=-x^3-x-d $ ist **streng monoton fallend**.
 ---
 
 ---
