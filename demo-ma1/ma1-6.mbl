@@ -23,18 +23,18 @@ let v = zeros(3,1);
 v[k,1] = 1;
 TODO: input rows = resizable
 @text
-Geben Sie den Einheitsvektor $e_(k)$ im $\RR^3$ an:
+Geben Sie den Einheitsvektor $e_(k)$ im $\R^3$ an:
 #v
 ---
 
 ---
 EXERCISE Rechenregeln
 @text
-Welche der folgenden Rechenregeln zur Addition und skalaren Multiplikation im $\RR^n$ sind korrekt?
-[x] $ (u+v)+w = u+(v+w) ~~ \forall u, v, w in \RR^n $
+Welche der folgenden Rechenregeln zur Addition und skalaren Multiplikation im $\R^n$ sind korrekt?
+[x] $ (u+v)+w = u+(v+w) ~~ \forall u, v, w in \R^n $
 [x] $ 1 * v = v ~~ \forall v in V $
-[x] $ (lambda + mu) v = lambda v + mu v ~~ \forall lambda, mu \in \RR, ~~ v \in \RR^n $
-[x] $ v + w = w + v ~~ \forall v, w \in \RR^n $
+[x] $ (lambda + mu) v = lambda v + mu v ~~ \forall lambda, mu \in \R, ~~ v \in \R^n $
+[x] $ v + w = w + v ~~ \forall v, w \in \R^n $
 ---
 
 ---
@@ -59,14 +59,14 @@ EXERCISE Skalarprodukt
 let u:v = rand<3,1>(-5,5);
 let s = dot(u,v);
 @text
-Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\RR^3$.
+Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\R^3$.
 Berechne das **Skalarprodukt** $ "u" \cdot "v" = $ #s
 ---
 
 ---
 EXERCISE Eukidische Norm
 @text
-Sei $u=[[u_1],[...],[u_n]] in \RR^n$. 
+Sei $u=[[u_1],[...],[u_n]] in \R^n$. 
 Wie ist die **euklidische Norm** definiert?
 (x) $ sqrt(u_1^2 + u_2^2 + ... + u_n^2) $
 ( ) $ |u_1| + |u_2| + ... + |u_n| $
@@ -80,7 +80,7 @@ let ux:uy:uz = rand(-5,5);
 let u = [[ux],[uy],[uz]];
 let en = sqrt(ux*ux + uy*uy + uz*uz);
 @text
-Sei $ "u"=u in \RR^3 $. Berechne die **euklidische Norm**:
+Sei $ "u"=u in \R^3 $. Berechne die **euklidische Norm**:
 - $ ||"u"|| = $ #en
 *Hinweis: Schreiben Sie (sofern nötig) für $\sqrt{x}$ `sqrt(x)`.*
 ---
@@ -95,7 +95,7 @@ v[1,1] = 3;
 v[3,1] = 4;
 a = acos( dot(u, v) / ( norm2(u) * norm2(v) ) );
 @text
-Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\RR^3$.
+Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\R^3$.
 Berechnen Sie den **Winkel** zwischen den Vektoren $"u"$ und $"v"$:
 - $ #a $
 *Hinweis: Schreiben Sie (ja nach Bedarf) `asin(x)`, `acos(x)` für die Arkusfunktionen.*
@@ -109,7 +109,7 @@ let uv = dot(u,v) == 0;
 let wx = dot(w,x) == 0;
 let yz = dot(y,z) == 0;
 @text
-Welche der folgenden Vektoren im $\RR^2$ sind **orthogonal**?
+Welche der folgenden Vektoren im $\R^2$ sind **orthogonal**?
 [uv] $u$ und $v$
 [wx] $w$ und $x$
 [yz] $y$ und $z$
@@ -130,9 +130,9 @@ Berechne die **Projektion** des Vektors $w$ auf den Vektor $v$:
 EXERCISE Vektorprodukt
 @text
 In welchen der folgenden euklidischen Räumen kann das Vektorprodukt bestimmt werden?
-[ ] $\RR^2$
-[x] $\RR^3$
-[ ] $\RR^4$
+[ ] $\R^2$
+[x] $\R^3$
+[ ] $\R^4$
 ---
 
 ---
@@ -142,7 +142,7 @@ let u:v = rand<3,1>(-2,2);
 let uxv = cross(u, v);
 TODO input rows = resizable;
 @text
-Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\RR^3$. Bestimme das Vektorprodukt von $"u"$ und $"v"$:
+Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\R^3$. Bestimme das Vektorprodukt von $"u"$ und $"v"$:
 - $"u" xx "v" =$ #uxv
 ---
 
@@ -271,7 +271,7 @@ A = triu(A);
 Ein lineares Gleichungssystem ist durch den Gauß-Algorithmus bereits in Dreiecksform gebracht worden. Die erweiterte Koeffizientenmatrix sieht folgendermaßen aus:
 $ augmented(A|b) $
 Welche Aussage über die **Lösungsmenge** ist korrekt?
-(x) Es gibt eine eindeutige Lösung $x \in \RR^n$.
+(x) Es gibt eine eindeutige Lösung $x \in \R^n$.
 ( ) Es gibt keine Lösung.
 ( ) Die Lösungsmenge kann mit einer freien Variable beschrieben werden.
 ---
@@ -288,7 +288,7 @@ b[2,0] = 0;
 Ein lineares Gleichungssystem ist durch den Gauß-Algorithmus bereits in Dreiecksform gebracht worden. Die erweiterte Koeffizientenmatrix sieht folgendermaßen aus:
 $ augmented(A|b) $
 Welche Aussage über die **Lösungsmenge** ist korrekt?
-( ) Es gibt eine eindeutige Lösung $x \in \RR^n$.
+( ) Es gibt eine eindeutige Lösung $x \in \R^n$.
 ( ) Es gibt keine Lösung.
 (x) Die Lösungsmenge kann mit einer freien Variable beschrieben werden.
 ---
@@ -304,7 +304,7 @@ A[0,0] = 0;
 Ein lineares Gleichungssystem ist durch den Gauß-Algorithmus bereits in Dreiecksform gebracht worden. Die erweiterte Koeffizientenmatrix sieht folgendermaßen aus:
 $ augmented(A|b) $
 Welche Aussage über die **Lösungsmenge** ist korrekt?
-( ) Es gibt eine eindeutige Lösung $x \in \RR^n$.
+( ) Es gibt eine eindeutige Lösung $x \in \R^n$.
 (x) Es gibt keine Lösung.
 ( ) Die Lösungsmenge kann mit einer freien Variable beschrieben werden.
 ---
@@ -389,7 +389,7 @@ EXERCISE Rang
 let A = rand<3,3>(0,2);
 let r = rank(A);
 @text
-Sei $ "A" = A $ eine 3 x 3 Matrix über $ \RR $.
+Sei $ "A" = A $ eine 3 x 3 Matrix über $ \R $.
 Bestimmen Sie den **Rang**:
 - $ rg("A") = $ #r
 ---
@@ -415,7 +415,7 @@ A[0,0] = 0;
 A[0,1] = 0;
 let d = det(A);
 @text
-Sei $ "A" = A $ eine 3 x 3 Matrix über $ \RR $.
+Sei $ "A" = A $ eine 3 x 3 Matrix über $ \R $.
 Berechnen Sie die **Determinante**:
 - $ det("A") = $ #d
 ---
