@@ -183,7 +183,6 @@ $ f'''(x) = $ #f1_deriv_3
 EXERCISE Höhere Ableitungen
 @code
 let a = rand(3,8);
-let a in { 3, 4, ..., 8 }
 let f1(x) = a * x * exp(x);
 let f1_deriv_1(x) = diff(f1, x);
 let f1_deriv_2(x) = diff(f1_deriv_1, x);
@@ -235,9 +234,9 @@ let f(x) = exp(x);
 let x0 = 0;
 let f1(x) = diff(f, x);
 let f2(x) = diff(f1, x);
-let p0(x) = f(x0) / 0! * (x - x0)^0;
-let p1(x) = f1(x0) / 1! * (x - x0)^1;
-let p2(x) = f2(x0) / 2! * (x - x0)^2;
+let p0(x) = f(x0) / fac(0) * (x - x0)^0;
+let p1(x) = f1(x0) / fac(1) * (x - x0)^1;
+let p2(x) = f2(x0) / fac(2) * (x - x0)^2;
 @text
 Bestimme das zweite Taylorpolynom $p_2(x) = sum_(k=0)^2 ( "f"^(k)(x) ) / ( k ) (x-x_0)^k $ für $"f"(x)=f$ und $x_0=0$:
 - $ p_0(x) =$ #p0
