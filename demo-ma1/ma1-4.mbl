@@ -4,9 +4,9 @@ Differentialrechnung
 ---
 EXERCISE Geradensteigung
 @text
-Sei $g$ eine Gerade im $\RR^2$ und $(x_0, y_0), (x_1, y_1)$ zwei verschiedene Punkte auf $g$. Dann ist die Steigung $m$ definiert durch:
-(x) $m = (y_1-y_0)/(x_1-x_0) = (\Delta y)/(\Delta x)$
-( ) $m = (x_1-x_0)/(y_1-y_0) = (\Delta x)/(\Delta y)$
+Sei $g$ eine Gerade im $\R^2$ und $(x_0, y_0), (x_1, y_1)$ zwei verschiedene Punkte auf $g$. Dann ist die Steigung $m$ definiert durch:
+(x) $m = \frac{y_1-y_0}{x_1-x_0} = \frac{\Delta y}{\Delta x}$
+( ) $m = \frac{x_1-x_0}{y_1-y_0} = \frac{\Delta x}{\Delta y}$
 ---
 
 ---
@@ -34,7 +34,7 @@ $ f'(x) = $ #f1_deriv
 ---
 EXERCISE Ableitungen
 @code
-let a:b = range(3,8);
+let a:b = rand(3,8);
 let f1(x) = a * x^b;
 let f1_deriv(x) = diff(f1, x);
 @text
@@ -141,7 +141,7 @@ $ f'(x) = $ #f1_deriv
 ---
 EXERCISE Ableitungen
 @code
-let a, b = rand(3,8);
+let a:b = rand(3,8);
 let f1(x) = sin(a*x) + cos(b*x);
 let f1_deriv(x) = diff(f1, x);
 @text
