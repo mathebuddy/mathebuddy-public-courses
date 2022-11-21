@@ -94,12 +94,12 @@ Bestimme den **Gradienten**:
 %Jacobi-Matrix
 %
 %	a in { 0, 1 }
-%	b := 1 - a
+%	b = 1 - a
 %	c in { -1, 1 }
 %	d in { 1, 2, ..., 5}
-%	f1(x,y) := a * x * y * sin(x) + b * x * y * cos(x)
-%	f2(x,y) := x^2 + c * y^2 + d
-%	J(x,y) := [ [ diff(f1,x), diff(f1,y) ], [ diff(f2,x), diff(f2,y) ] ]
+%	f1(x,y) = a * x * y * sin(x) + b * x * y * cos(x)
+%	f2(x,y) = x^2 + c * y^2 + d
+%	J(x,y) = [ [ diff(f1,x), diff(f1,y) ], [ diff(f2,x), diff(f2,y) ] ]
 %
 %Sei $f(x,y) = ( f1, f2 )$.
 %Bestimmen Sie die __Jacobi-Matrix__:
