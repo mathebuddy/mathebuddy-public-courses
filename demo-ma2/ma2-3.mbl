@@ -142,12 +142,12 @@ let l1 = 0;
 let l2 = 1;
 let l3 = 1;
 let l4 = 1;
-let g := (a*l1 + d*l2) mod 2;
-let h := (b*l1 + e*l2) mod 2;
-let i := (c*l1 + f*l2) mod 2;
-let j := (a*l3 + d*l4) mod 2;
-let k := (b*l3 + e*l4) mod 2;
-let l := (c*l3 + f*l4) mod 2;
+let g = (a*l1 + d*l2) mod 2;
+let h = (b*l1 + e*l2) mod 2;
+let i = (c*l1 + f*l2) mod 2;
+let j = (a*l3 + d*l4) mod 2;
+let k = (b*l3 + e*l4) mod 2;
+let l = (c*l3 + f*l4) mod 2;
 @text
 Seien $ v_1 = [[a],[b],[c]] $, $ v_2 = [[d],[e],[f]] $ Vektoren im $ \GF(2)^3 $ und $ U = <v_1,v_2> $.
 Welche der folgenden Antworten sind richtig?
@@ -308,7 +308,7 @@ let y = 2 * a * b;
 let c1 = -y;
 let c2 = 1 / sqrt(x^2 + y^2);
 @text
-Bestimme $c_1 \in \RR$, sodass die folgenden beiden Vektoren eine **Orthogonalbasis** des $\R^2$ bilden:
+Bestimme $c_1 \in \R$, sodass die folgenden beiden Vektoren eine **Orthogonalbasis** des $\R^2$ bilden:
 - $ "b_1"=[[x],[y]]$ $ "b_2"=[[c_1],[x]]$
 - $c_1=$ #c1
 Bestimme nun $c_2 \in \R$, sodass die Basis $\{ c_2 \cdot "b_1", c_2 \cdot "b_2" \}$ eine **Orthonormalbasis** ist.
@@ -320,10 +320,10 @@ EXERCISE Orthogonale Matrizen
 @code
 let E2 = eye(2);
 let A/B/C/D = rand<2,2>(0,1);
-let qa := (A * A^T) == E2;
-let qb := (B * B^T) == E2;
-let qc := (C * C^T) == E2;
-let qd := (D * D^T) == E2;
+let qa = (A * A^T) == E2;
+let qb = (B * B^T) == E2;
+let qc = (C * C^T) == E2;
+let qd = (D * D^T) == E2;
 @text
 Welche der folgenden Matrizen über $\R$ sind **orthogonal**?
 [$qa$] $A$
