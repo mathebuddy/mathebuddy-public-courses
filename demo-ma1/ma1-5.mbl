@@ -4,7 +4,7 @@ Integralrechnung
 ---
 EXERCISE Riemann Integral
 @text
-Zur Bestimmung des **Riemann-Integrals** einer Funktion $f:[a,b] \to \RR$ unterteilt man [a,b] in "kleine" Teilintervalle und bestimmt für diese Intervalle jeweils den kleinsten und größten Funktionswert. Die Summation der vorzeichenbehafteten Flächen mit dem größten Funktionswert liefert die
+Zur Bestimmung des **Riemann-Integrals** einer Funktion $f:[a,b] \to \R$ unterteilt man [a,b] in "kleine" Teilintervalle und bestimmt für diese Intervalle jeweils den kleinsten und größten Funktionswert. Die Summation der vorzeichenbehafteten Flächen mit dem größten Funktionswert liefert die
 (x) **Obersumme**
 ( ) **Untersumme**
 ---
@@ -41,9 +41,9 @@ Wählen Sie die korrekten Aussagen:
 ---
 EXERCISE Integrierbarkeit
 @text
-Seien $a,b \in \RR, a < b$:
-[x] Jede **stetige** Funktion $f:[a,b] \to \RR$ ist integrierbar.
-[x] Jede **monotone** Funktion $f:[a,b] \to \RR$ ist integrierbar.
+Seien $a,b \in \R, a < b$:
+[x] Jede **stetige** Funktion $f:[a,b] \to \R$ ist integrierbar.
+[x] Jede **monotone** Funktion $f:[a,b] \to \R$ ist integrierbar.
 ---
 
 ---
@@ -67,8 +67,8 @@ let f(x) = u1;
 let g(y) = u2;
 @text
 Bestimme die folgenden **unbestimmten** Integrale:
-- $ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \RR)$
-- $ \int g \dy = $ #[diff y]g $ + C ~~ (C \in \RR)$
+- $ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \R)$
+- $ \int g \dy = $ #[diff y]g $ + C ~~ (C \in \R)$
 ---
 
 ---
@@ -78,7 +78,7 @@ let u = rand(3,8);
 let f(x) = u * x;
 @text
 Bestimme die Stammfunktion zu $"f"(x) = f $
-$ F(x) = $ #[diff x]f $ + C ~~ (C \in \RR)$
+$ F(x) = $ #[diff x]f $ + C ~~ (C \in \R)$
 ---
 
 ---
@@ -88,7 +88,7 @@ let u:v = rand(3,8);
 let f(x) = u + v * x;
 @text
 Bestimme die Stammfunktion zu $"f"(x) = f $
-$ F(x) = $ #[diff x]f $ + C ~~ (C \in \RR)$
+$ F(x) = $ #[diff x]f $ + C ~~ (C \in \R)$
 ---
 
 ---
@@ -98,7 +98,7 @@ let u = rand(3,8);
 let f(x) = u * x^2;
 @text
 Bestimme die Stammfunktion zu $"f"(x) = f $
-$ F(x) = $ #[diff x]f $ + C ~~ (C \in \RR)$
+$ F(x) = $ #[diff x]f $ + C ~~ (C \in \R)$
 ---
 
 ---
@@ -107,7 +107,7 @@ EXERCISE Stammfunktion
 let f(x) = cos(x);
 @text
 Bestimme die Stammfunktion zu $"f"(x) = f $
-$ F(x) = #[diff x]f + C ~~ (C \in \RR)$
+$ F(x) = #[diff x]f + C ~~ (C \in \R)$
 ---
 
 ---
@@ -148,7 +148,7 @@ EXERCISE Partielle Integration
 let f(x) = x * exp(x);
 @text
 Bestimme durch **partielle Integration:**
-$ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \RR)$
+$ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \R)$
 *Hinweis: Schreiben Sie $e^x$ als $exp(x)$.*
 ---
 
@@ -158,7 +158,7 @@ EXERCISE Partielle Integration
 let f(x) = x * sin(x);
 @text
 Bestimme durch **partielle Integration:**
-$ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \RR)$
+$ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \R)$
 ---
 
 ---
@@ -167,7 +167,7 @@ EXERCISE Partielle Integration
 let f(x) = (x+1) / exp(x);
 @text
 Bestimme durch **partielle Integration:**
-$ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \RR)$
+$ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \R)$
 *Hinweis: Schreiben Sie $e^x$ als $exp(x)$.*
 ---
 
@@ -177,7 +177,7 @@ EXERCISE Substitutionsregel
 let f(x) = (x+1)^2
 @text
 Bestimme durch **Substitution:**
-$ \int f \dx = #[diff x]f + C ~~ (C \in \RR)$
+$ \int f \dx = #[diff x]f + C ~~ (C \in \R)$
 ---
 
 ---
@@ -186,7 +186,7 @@ EXERCISE Substitutionsregel
 let f(x) = exp(3*x-1);
 @text
 Bestimme durch **Substitution:**
-$ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \RR)$
+$ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \R)$
 *Hinweis: Schreiben Sie $e^x$ als $exp(x)$.*
 ---
 
@@ -196,7 +196,7 @@ EXERCISE Substitutionsregel
 let f(x) = 3*x * sin(x^2+1);
 @text
 Bestimme durch **Substitution:**
-$ \int f \dx = #[diff x]f + C ~~ (C \in \RR)$
+$ \int f \dx = #[diff x]f + C ~~ (C \in \R)$
 ---
 
 ---
