@@ -121,9 +121,8 @@ $ F(x) = $ #[diff x]f $ + C ~~ (C in RR)$
 ---
 
 ---
-EXERCISE
+EXERCISE Uneigentliches Integral
 @code
-Uneigentliches Integral
 let a = rand(3,8);
 let f(x) = a / x^2;
 @text
@@ -174,7 +173,7 @@ $ \int f \dx = $ #[diff x]f $ + C ~~ (C \in \R)$
 ---
 EXERCISE Substitutionsregel
 @code
-let f(x) = (x+1)^2
+let f(x) = (x+1)^2;
 @text
 Bestimme durch **Substitution:**
 $ \int f \dx = #[diff x]f + C ~~ (C \in \R)$
