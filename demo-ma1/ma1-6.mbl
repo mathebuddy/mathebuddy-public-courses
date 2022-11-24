@@ -45,9 +45,9 @@ let a:b = rand(-4,4);
 let ux:uy = rand(-3,3);
 let u1 = [[ux],[uy]];
 let v1 = a * u1;
-let ux:uy = rand(-3,3);
-let u2 = [[ux],[uy]];
-let v2 = [[ux*b],[uy*(-b)]];
+let ux2:uy2 = rand(-3,3);
+let u2 = [[ux2],[uy2]];
+let v2 = [[ux2*b],[uy2*(-b)]];
 @text
 Welche der folgenden Ortsvektoren sind **kollinear**?
 [x] $ u=u1 $ und $ v=v1 $
@@ -57,7 +57,7 @@ Welche der folgenden Ortsvektoren sind **kollinear**?
 ---
 EXERCISE Skalarprodukt
 @code
-let u:v = rand<3,1>(-5,5);
+let u:v = rand<3>(-5,5);
 let s = dot(u,v);
 @text
 Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\R^3$.
@@ -69,9 +69,9 @@ EXERCISE Eukidische Norm
 @text
 Sei $u=[[u_1],[...],[u_n]] in \R^n$. 
 Wie ist die **euklidische Norm** definiert?
-(x) $ sqrt(u_1^2 + u_2^2 + ... + u_n^2) $
-( ) $ |u_1| + |u_2| + ... + |u_n| $
-( ) $ max_(i=1,...,n) |u_i| $
+(x) $ \sqrt{u_1^2 + u_2^2 + \dots + u_n^2} $
+( ) $ |u_1| + |u_2| + \dots + |u_n| $
+( ) $ \max_{i=1,\dots,n} |u_i| $
 ---
 
 ---
@@ -81,7 +81,7 @@ let ux:uy:uz = rand(-5,5);
 let u = [[ux],[uy],[uz]];
 let en = sqrt(ux*ux + uy*uy + uz*uz);
 @text
-Sei $ "u"=u in \R^3 $. Berechne die **euklidische Norm**:
+Sei $ "u"=u \in \R^3 $. Berechne die **euklidische Norm**:
 - $ ||"u"|| = $ #en
 *Hinweis: Schreiben Sie (sofern nötig) für $\sqrt{x}$ `sqrt(x)`.*
 ---
