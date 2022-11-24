@@ -90,15 +90,15 @@ Sei $ "u"=u \in \R^3 $. Berechne die **euklidische Norm**:
 EXERCISE Winkel zwischen Vektoren
 @code
 let a:b = rand(3,8);
-let u:v = zeros<3,1>();
-u[1,1] = a;
-v[1,1] = 3;
-v[3,1] = 4;
+let u:v = zeros<3>();
+u[0] = a;
+v[0] = 3;
+v[2] = 4;
 a = acos( dot(u, v) / ( norm2(u) * norm2(v) ) );
 @text
 Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\R^3$.
 Berechnen Sie den **Winkel** zwischen den Vektoren $"u"$ und $"v"$:
-- $ #a $
+- #a
 *Hinweis: Schreiben Sie (ja nach Bedarf) `asin(x)`, `acos(x)` für die Arkusfunktionen.*
 ---
 
