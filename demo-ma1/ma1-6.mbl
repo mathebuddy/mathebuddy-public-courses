@@ -105,7 +105,7 @@ Berechnen Sie den **Winkel** zwischen den Vektoren $"u"$ und $"v"$:
 --
 EXERCISE Orthogonale Vektoren
 @code
-let u:v:w:x:y:z = rand<2,1>(-1,1);
+let u:v:w:x:y:z = rand<2>(-1,1);
 let uv = dot(u,v) == 0;
 let wx = dot(w,x) == 0;
 let yz = dot(y,z) == 0;
@@ -118,10 +118,11 @@ Welche der folgenden Vektoren im $\R^2$ sind **orthogonal**?
 
 ---
 EXERCISE Projektion
+@options
+n-rows
 @code
-let w:v = rand<2,1>(-2,2);
+let w:v = rand<2>(-2,2);
 let p = dot(v,w) / dot(v,v) * v;
-TODO input rows = resizable;
 @text
 Berechne die **Projektion** des Vektors $w$ auf den Vektor $v$:
 #p
@@ -138,10 +139,11 @@ In welchen der folgenden euklidischen Räumen kann das Vektorprodukt bestimmt we
 
 ---
 EXERCISE Vektorprodukt
+@options
+n-rows
 @code
-let u:v = rand<3,1>(-2,2);
+let u:v = rand<3>(-2,2);
 let uxv = cross(u, v);
-TODO input rows = resizable;
 @text
 Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\R^3$. Bestimme das Vektorprodukt von $"u"$ und $"v"$:
 - $"u" xx "v" =$ #uxv
@@ -149,57 +151,62 @@ Gegeben sind die beiden Vektoren $"u"=u$ und $"v"=v$ im $\R^3$. Bestimme das Vek
 
 ---
 EXERCISE Matrizenoperationen
+@options
+n-rows
+n-cols
 @code
 let A:B = rand<3,3>(1,3);
 let C = A - B;
-TODO input rows = resizable;
-TODO input cols = resizable;
 @text
 Berechne $ A - B = $ #C
 ---
 
 ---
 EXERCISE Matrizenoperationen
+@options
+n-rows
+n-cols
 @code
 let A = rand<3,3>(2,5);
 let b = rand(2,5);
 let B = b * A;
-TODO input rows = resizable;
-TODO input cols = resizable;
 @text
 Berechne $ a * A = $ #B
 ---
 
 ---
 EXERCISE Transponierte Matrix
+@options
+n-rows
+n-cols
 @code
 let A = rand<3,2>(1,3);
-let B = A^T;
-TODO input rows = resizable;
-TODO input cols = resizable;
+let B = transpose(A);
 @text
 Bestimme $ A^T = $ #B
 ---
 
 ---
 EXERCISE Matrizenoperationen
+@options
+n-rows
+n-cols
 @code
 let A:B = rand<2,2>(1,3);
 let C = A * B;
-TODO input rows = resizable;
-TODO input cols = resizable;
 @text
 Berechne $ A*B = $ #C
 ---
 
 ---
 EXERCISE Matrizenoperationen
+@options
+n-rows
+n-cols
 @code
 let A:C = rand<2,1>(1,3);
 let B = rand<2,2>(1,3);
-let D = (A + B^T * C)^T;
-TODO input rows = resizable;
-TODO input cols = resizable;
+let D = transpose(A + transpose(B) * C);
 @text
 Berechne $ (A + B^T * C)^T = $ #D
 ---
@@ -226,7 +233,7 @@ Welche der folgenden Operationen sind erlaubt?
 EXERCISE Lineare Gleichungssysteme
 @code
 let A = rand<2,2>(2,4);
-let b = rand<2,1>(1,3);
+let b = rand<2>(1,3);
 A[1,0] = 0;
 let a11 = A[0,0];
 let a12 = A[0,1];
@@ -234,10 +241,7 @@ let a21 = A[1,0];
 let a22 = A[1,1];
 let b1 = b[0];
 let b2 = b[0];
-x = linsolve(A, b);
-input rows = resizable;
-input cols = resizable;
-TODO input cols = static
+let x = linsolve(A, b);
 @text
 Gegeben ist das folgende **lineare Gleichungssystem (LGS)**:
 - $ a11 x_1 + a12 x_2 = b1 $
@@ -313,14 +317,14 @@ Welche Aussage über die **Lösungsmenge** ist korrekt?
 ---
 EXERCISE Gauß-Algorithmus
 @code
-let A = zeros(2,2);
+let A = zeros<2,2>();
 do {
     A = randZ<2,2>(1,4);
 } while(is_invertible(A) == false);
-let b = randZ<2,1>(1,4);
+let b = randZ<2>(1,4);
 let x = linsolve(A, b);
 @text
-Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des **Gauß-Algorithmus**:
+Löse das folgende lineare Gleichungssystem mit Hilfe des **Gauß-Algorithmus**:
 $ augmented(A|b) $
 Lösungsvektor: $"x"=$ #x
 ---
@@ -328,14 +332,14 @@ Lösungsvektor: $"x"=$ #x
 ---
 EXERCISE Gauß-Algorithmus
 @code
-let A = zeros(3,3);
+let A = zeros<3,3>();
 do {
     A = randZ<3,3>(1,4);
 } while(is_invertible(A) == false);
-let b = randZ<3,1>(1,4);
+let b = randZ<3>(1,4);
 let x = linsolve(A, b);
 @text
-Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des **Gauß-Algorithmus**:
+Löse das folgende lineare Gleichungssystem mit Hilfe des **Gauß-Algorithmus**:
 $ augmented(A|b) $
 Lösungsvektor: $"x"=$ #x
 ---
@@ -343,11 +347,11 @@ Lösungsvektor: $"x"=$ #x
 ---
 EXERCISE Gauß-Algorithmus
 @code
-let A = zeros(4,4);
+let A = zeros<4,4>();
 do {
     A = randZ<4,4>(1,4);
 } while(is_invertible(A) == false);
-let b = randZ<4,1>(1,4);
+let b = randZ<4>(1,4);
 let x = linsolve(A, b);
 @text
 Lösen Sie das folgende lineare Gleichungssystem mit Hilfe des **Gauß-Algorithmus**:
@@ -358,7 +362,12 @@ Lösungsvektor: $"x"=$ #x
 ---
 EXERCISE Lineare Unabhängigkeit
 @code
-let a:b:c:d:e:f:g:h:_i = rand(0,2);
+let a:b:c:d:e:f:g:h:i = rand(0,2);
+
+let a = 0;
+let b = 2;
+let v1:v2 = rand<2>(a,b);
+let A = matrix(v1,v2);
 
 let v1 = matrix(a; b);
 let v2 = matrix(c; d);
@@ -373,9 +382,9 @@ let q2 = det(A) != 0;
 
 let v5 = matrix(a; b; c);
 let v6 = matrix(d; e; f);
-let v7 = matrix(g; h; _i);
+let v7 = matrix(g; h; i);
 
-let A = matrix(a,d,g; b,e,h; c,f,_i);
+let A = matrix(a,d,g; b,e,h; c,f,i);
 let q3 = det(A) != 0;
 @text
 Welche der unten stehenden Vektoren sind **linear unabhängig**?
