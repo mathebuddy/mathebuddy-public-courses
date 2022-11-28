@@ -5,11 +5,11 @@ Differentialgleichungen
 EXERCISE DGL erster Ordnung mit trennbaren Variablen
 @code
 let a = rand(2,5);
-let y(x) = ode( diff(y,x), - a * x^2/y );
+%TODO: let y(x) = ode( diff(y,x), - a * x^2/y );
 @text
 Löse die folgende DGL: $y$:
-- $"y"(x)=\pm$ #y
-*Hinweis: Geben Sie die Konstante $C \in \R$ mit einem großen `C`, sowie die Wurzel von $x$ mit `sqrt(x)` an.*
+- $"y"(x) = \pm$ #y
+*Hinweis: Gebe die Konstante $C \in \R$ mit einem großen `C`, sowie die Wurzel von $x$ mit `sqrt(x)` an.*
 ---
 
-TODO: migrate old ODE SELL exercises
+% TODO: migrate old SELL ODE exercises
