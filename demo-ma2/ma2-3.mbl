@@ -35,9 +35,9 @@ n-rows
 n-cols
 @code
 let A = rand<3,2>(1,3);
-let B = A';
+let B = transpose(A);
 @text
-Berechne $A'=$ #B
+Berechne $A^T=$ #B
 *Hinweis: Dimensioniere zunächst die Ergebnismatrix.*
 ---
 
@@ -60,9 +60,9 @@ EXERCISE Matrizenoperationen
 n-rows
 n-cols
 @code
-let A:C = rand<2,1>(1,3):
+let A:C = rand<2,1>(1,3);
 let B = rand<2,2>(1,3);
-let D = (A + B' * C)';
+let D = transpose(A + transpose(B) * C);
 @text
 Berechne $ (A+B^T \cdot C)^T =$ #D
 *Hinweis: Dimensioniere zunächst die Ergebnismatrix.*
@@ -74,7 +74,7 @@ EXERCISE Restklassen
 let a:b:c = rand(10,20);
 let a2:b2:c2:c3 = rand(2,5);
 let sa = a mod a2;
-let b = - b;
+b = - b;
 let sb = b mod b2;
 let sc = c2*c3 mod c2;
 @text
@@ -102,8 +102,8 @@ let b = rand(1,7);
 let c = b + 1;
 b = b mod (n-1) + 1;
 c = c mod (n-1) + 1;
-let s1 = xgcd(b, n)[1] mod n;
-let s2 = xgcd(c, n)[1] mod n;
+%TODO: let s1 = xgcd(b, n)[1] mod n;
+%TODO: let s2 = xgcd(c, n)[1] mod n;
 @text
 Gebe die **multiplikativ inversen Elemente** für den Körper $\GF(n)$ an:
 - $b^{-1} \equiv$  #s1  $\mod n$
@@ -163,7 +163,7 @@ n-cols
 @code
 let A:C = rand<2,1>(0,1);
 let B = rand<2,2>(0,1);
-let term = (A + B' * C)' mod 2;
+let term = transpose(A + transpose(B) * C) mod 2;
 @text
 Berechne den folgenden Term über $\GF(2)$.
 - $ (A + B^T \cdot C)^T =$ #term
@@ -267,12 +267,12 @@ EXERCISE Lineare Unabhängigkeit
 @code
 let A:B = rand<2,2>(0,1);
 let C = rand<3,3>(0,1);
-let q1 = (det(A) mod 2) != 0;
-let q2 = (det(B) mod 2) != 0;
-let q3 = (det(C) mod 2) != 0;
-let A1 = A[:1]; let A2 = A[:2];
-let B1 = B[:1]; let B2 = B[:2];
-let C1 = C[:1]; let C2 = C[:2]; let C3 = C[:3];
+let q1 = (int(det(A)) mod 2) != 0;
+let q2 = (int(det(B)) mod 2) != 0;
+let q3 = (int(det(C)) mod 2) != 0;
+let A1 = column(A,0); let A2 = column(A,1);
+let B1 = column(B,0); let B2 = column(B,1);
+let C1 = column(C,0); let C2 = column(C,1); let C3 = column(C,2);
 @text
 Welche der unten stehenden Vektoren über dem $\GF(2)$ sind **linear unabhängig**?
 [$q1$] $A1,A2$
@@ -284,7 +284,7 @@ Welche der unten stehenden Vektoren über dem $\GF(2)$ sind **linear unabhängig
 EXERCISE Basen
 @code
 let A = rand<3,3>(0,4);
-while (is_invertible(A) == fasle) {
+while (is_invertible(A) == false) {
     A = rand<3,3>(0,4);
 }
 let q1 = true;
