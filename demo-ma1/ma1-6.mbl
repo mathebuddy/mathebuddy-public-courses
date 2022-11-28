@@ -362,35 +362,23 @@ Lösungsvektor: $"x"=$ #x
 ---
 EXERCISE Lineare Unabhängigkeit
 @code
-let a:b:c:d:e:f:g:h:i = rand(0,2);
-
 let a = 0;
 let b = 2;
 let v1:v2 = rand<2>(a,b);
 let A = matrix(v1,v2);
-
-let v1 = matrix(a; b);
-let v2 = matrix(c; d);
-let A = matrix(a,c; b,d);
 let q1 = det(A) != 0;
-
-a = (a + 1) mod 2
-let v3 = matrix(a; b);
-let v4 = matrix(c; d);
-let A = matrix(a,c; b,d);
+a = (a + 1) mod 2;
+let v3:v4 = rand<2>(a,b);
+A = matrix(v3,v4);
 let q2 = det(A) != 0;
-
-let v5 = matrix(a; b; c);
-let v6 = matrix(d; e; f);
-let v7 = matrix(g; h; i);
-
-let A = matrix(a,d,g; b,e,h; c,f,i);
+let v5:v6:v7 = rand<3>(a,b);
+A = matrix(v5,v6,v7);
 let q3 = det(A) != 0;
 @text
 Welche der unten stehenden Vektoren sind **linear unabhängig**?
-[$q1$] $ v1, v2 $
-[$q2$] $ v3, v4 $
-[$q3$] $ v5, v6, v7 $
+[$q1$] $v1,v2$
+[$q2$] $v3,v4$
+[$q3$] $v5,v6,v7$
 ---
 
 ----
@@ -407,11 +395,11 @@ Bestimmen Sie den **Rang**:
 ---
 EXERCISE Inverse Matrix
 @code
-let A = zeros(3,3);
+let A = zeros<3,3>();
 do {
     A = rand<3,3>(0,2);
 } while(is_invertible(A) == false);
-iA = inv(A);
+let iA = inv(A);
 @text
 Berechnen Sie die **inverse** Matrix:
 - $ A^(-1) = $ #iA
