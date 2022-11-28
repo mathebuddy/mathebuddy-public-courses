@@ -320,10 +320,10 @@ EXERCISE Orthogonale Matrizen
 @code
 let E2 = eye(2);
 let A/B/C/D = rand<2,2>(0,1);
-let qa = (A * A^T) == E2;
-let qb = (B * B^T) == E2;
-let qc = (C * C^T) == E2;
-let qd = (D * D^T) == E2;
+let qa = (A * transpose(A)) == E2;
+let qb = (B * transpose(B)) == E2;
+let qc = (C * transpose(C)) == E2;
+let qd = (D * transpose(D)) == E2;
 @text
 Welche der folgenden Matrizen über $\R$ sind **orthogonal**?
 [$qa$] $A$
@@ -336,7 +336,7 @@ Welche der folgenden Matrizen über $\R$ sind **orthogonal**?
 EXERCISE Orthogonale Matrizen
 @code
 let c = rand(-4,-2);
-let d = rand(2,4)
+let d = rand(2,4);
 let a = c^2 + d^2;
 let b = -c;
 @text
