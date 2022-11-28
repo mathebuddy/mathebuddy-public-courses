@@ -107,7 +107,7 @@ Bestimme die ersten $3$ **Folgenglieder** der komplexen Folge $(a_n)_{n \in \N} 
 EXERCISE Komplexe Folgen
 @code
 let c = rand(2,4);
-let Z = 1/c + 1/c * 1i;
+let z = 1/c + 1/c * 1i;
 let	a1 = z^1;
 let a2 = z^2;
 @text
@@ -147,9 +147,9 @@ EXERCISE Quotienten von Polynomen
 @code
 let a:b:c:d = rand(2,8);
 let ee = rand(2,9)^2;
-let A = 0*i;
-let B = sqrt(ee)*i;
-let C = -sqrt(ee)*i;
+let A = 0*1i;
+let B = sqrt(ee)*1i;
+let C = -sqrt(ee)*1i;
 let res = set(A,B,C);
 @text
 Gegeben sei die folgende rationale Funktion:
