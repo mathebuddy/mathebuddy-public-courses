@@ -15,6 +15,7 @@
     "linksgekrümmt",
     "linsolve",
     "mapsto",
+    "mathbb",
     "mathe",
     "Matrizenoperationen",
     "Matrizenschreibweise",
@@ -25,11 +26,15 @@
     "Partialbruchzerlegung",
     "rechtsgekrümmt",
     "setminus",
+    "socrates",
+    "subsec",
     "surjektiv",
     "Surjektivität",
     "Taylorpolynom",
     "triu",
+    "xaxis",
     "xgcd",
+    "yaxis",
     "zmax"
   ],
   "cSpell.language": "en,de-de"
