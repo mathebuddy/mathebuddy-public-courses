@@ -34,7 +34,9 @@
     "triu",
     "xaxis",
     "xgcd",
+    "xlabel",
     "yaxis",
+    "ylabel",
     "zmax"
   ],
   "cSpell.language": "en,de-de"
