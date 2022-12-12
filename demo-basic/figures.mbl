@@ -24,7 +24,7 @@ figure_color(fig0, 0);
 figure_plot(fig0, [0, 0]);
 figure_plot(fig0, [2, 4]);
 @path
-#fig
+#fig0
 @caption
 Some functions
 ---
