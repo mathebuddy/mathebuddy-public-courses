@@ -2,7 +2,11 @@
 
 This repository contains public courses for the mathe:buddy app.
 
-- Each course is hosted in a separate directory.
-- file `index.mbl` defines the course structure, as well as meta data (TODO: UNIMPLEMENTED!)
-- Content files have the extension `.mbl` (mathe-buddy-language) which is specified [here](https://github.com/mathebuddy/mathebuddy-compiler) (TOOL: DOCUMENTATION WILL BE ADDED SOON)
-- Refer to directories `demo-*/` for examples
+Read the [Docs](https://app.f07-its.fh-koeln.de) first!
+
+We provide the following folders:
+
+- `demo-basics/` contains separate level files to demonstrate typography, exercises, figures, tables, etc.
+- `demo-course/` contains a course structure.
+- `demo-ma1/` contains a set of simple exercises for "higher math 1" (German)
+- `demo-ma2/` contains a set of simple exercises for "higher math 2" (German)
