@@ -4,7 +4,7 @@ Integralrechnung
 ---
 EXERCISE Riemann Integral
 @text
-Zur Bestimmung des **Riemann-Integrals** einer Funktion $f:[a,b] \to \R$ unterteilt man [a,b] in "kleine" Teilintervalle und bestimmt für diese Intervalle jeweils den kleinsten und größten Funktionswert. Die Summation der vorzeichenbehafteten Flächen mit dem größten Funktionswert liefert die
+Zur Bestimmung des **Riemann-Integrals** einer Funktion $f:[a,b] \to \R$ unterteilt man $[a,b]$ in "kleine" Teilintervalle und bestimmt für diese Intervalle jeweils den kleinsten und größten Funktionswert. Die Summation der vorzeichenbehafteten Flächen mit dem größten Funktionswert liefert die
 (x) **Obersumme**
 ( ) **Untersumme**
 ---
@@ -13,10 +13,10 @@ Zur Bestimmung des **Riemann-Integrals** einer Funktion $f:[a,b] \to \R$ unterte
 EXERCISE Begriffe
 @text
 Sei $ \int_a^b f(x) dx$. Finden Sie die richtigen **Begriffe**:
-* $a$ und $b$ heißen #"Integrationsgrenzen".
-* $x$ heißt #"Integrationsvariable".
-* $f(x)$ heißt #"Integrand".
-* $dx$ heißt #"Differential".
+- $a$ und $b$ heißen #"Integrationsgrenzen".
+- $x$ heißt #"Integrationsvariable".
+- $f(x)$ heißt #"Integrand".
+- $dx$ heißt #"Differential".
 ---
 
 ---
