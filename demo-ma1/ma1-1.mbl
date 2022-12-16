@@ -26,7 +26,7 @@ Sei $"A"=A$. Wie viele Elemente hat die **Potenzmenge** $P("A")$?
 ---
 EXERCISE Mengenoperationen
 @text
-Seien $A$ und $B$ Mengen. $A \union B$ beschreibt:
+Seien $A$ und $B$ Mengen. $A \cup B$ beschreibt:
 (x) die **Vereinigung** von $A$ und $B$.
 ( ) den **Durchschnitt** von $A$ und $B$.
 ---
@@ -59,7 +59,7 @@ EXERCISE Mengen
 let a = rand(1,5);
 let B = set(a,a*2,a*3);
 @text
-Gegeben Sei die Menge $ "B" = \{ k \in NN | k=a*n text( und ) n <= 3 } $. Geben Sie die Menge **explizit** an:
+Gegeben Sei die Menge $ "B" = \{ k \in \N | k=a \cdot n \text{und} n <= 3 \} $. Geben Sie die Menge **explizit** an:
 $"B"=$ #B
 ---
 
@@ -81,7 +81,7 @@ let a = rand(2,4);
 let n = 3;
 let s = a * 6;
 @text
-Berechne $\sum_{i=1}^n a*i$:
+Berechne $\sum_{i=1}^n a \cdot i$:
 #s
 ---
 
@@ -113,7 +113,7 @@ let n = rand(3,5);
 let k = rand(0,n);
 let b = binomial(n,k);
 @text
-Bestimme den Binomialkoeffizienten $\VEC(n,k)$ mit Hilfe des **Pascalschen Dreiecks**.
+Bestimme den Binomialkoeffizienten $\mat{n\\k}$ mit Hilfe des **Pascalschen Dreiecks**.
 #b
 ---
 
@@ -132,8 +132,8 @@ Wähle die richtigen Antworten aus:
 EXERCISE Supremum, Infimum
 @text
 Sei $X \subset \R$.
-* $M \in \R$ heißt **Supremum** von $X$, falls $M$ eine #"obere" Schranke ist und keine kleinere #"obere" Schranke existiert.
-* $M \in \R$ heißt **Infimum** von $X$, falls $m$ eine #"untere" Schranke ist und keine größere #"untere" Schranke existiert.
+- $M \in \R$ heißt **Supremum** von $X$, falls $M$ eine #"obere" Schranke ist und keine kleinere #"obere" Schranke existiert.
+- $M \in \R$ heißt **Infimum** von $X$, falls $m$ eine #"untere" Schranke ist und keine größere #"untere" Schranke existiert.
 
 Füllen Sie den Lückentext aus.
 ---
@@ -149,7 +149,7 @@ let d = c + y;
 let m = a;
 let M = d;
 @text
-Sei $ X = [a, c[ \union [b, d[ $.
+Sei $ X = [a, c[ \cup [b, d[ $.
 Bestimmen Sie:
 - Infimum m = inf $(X)=$ #m
 - Supremum M = sup $(X)=$ #M
@@ -186,9 +186,9 @@ EXERCISE Aussagenlogik
 let a:b:c:d = rand(3,5);
 @text
 Welche der folgenden Ausdrücke sind **wahre Aussagen**?
-[ ] Die Menge $M=\{k \in \N | k=2 m text( und ) m>3}$ hat 3 Elemente.
-[ ] $a + b * c$.
-[x] $\exists x \in \z ~~ x < 0$
+[ ] Die Menge $M=\{k \in \N | k=2 m \text{und} m>3 \}$ hat 3 Elemente.
+[ ] $a + b \cdot c$.
+[x] $\exists x \in \Z ~~ x < 0$
 [x] Die Gleichung $a x + c = d$ besitzt genau eine Lösung.
 ---
 
@@ -197,7 +197,7 @@ EXERCISE Aussagenlogik
 @text
 Welche der folgenden Aussagen sind wahr?
 [ ]   $ \exists x \in \R ~~ x < x  $
-[x]   $ \forall y \in \z ~~ y^2 >= 0 $
+[x]   $ \forall y \in \Z ~~ y^2 >= 0 $
 [ ]   $ \forall z \in \R ~~ (z <= 0  \land  z > 0) $
 [x]   $ \forall z \in \R ~~ (z <= 0  \lor  z > 0) $
 ---
@@ -219,10 +219,10 @@ EXERCISE Verkettung von Funktionen
 @code
 let a:b:c = rand(2,5);
 @text
-Sei  $ f : \R \to \R, f(x) = a*x + b $ und $ g : \R \to \R, g(x) = x^c $.
-Wählen Sie die richtige Antwort aus:
-(x) $ (g \circ f)(x) = (a*x + b)^c $
-( ) $ (g \circ f)(x) = a*x^c + b $
+Sei  $ f : \R \to \R, f(x) = a \cdot x + b $ und $ g : \R \to \R, g(x) = x^c $.
+Wähle die richtige Antwort aus:
+(x) $ (g \circ f)(x) = (a \cdot x + b)^c $
+( ) $ (g \circ f)(x) = a \cdot x^c + b $
 ---
 
 ---
