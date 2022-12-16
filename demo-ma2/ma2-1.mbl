@@ -47,7 +47,7 @@ let z = complex(x,y);
 let r = abs(z);
 @text
 Sei $"z" \in \C$ und $"z"=z$.
-- Berechne $\abs{"z"}=$ #r
+- Berechne $|"z"|=$ #r
 ---
 
 
@@ -84,7 +84,7 @@ let z1 = complex(a,b);
 let z2 = complex(c,d);
 let res = z1^pow + z2;
 @text
-- Berechne den folgenden **komplexen Term** und gebe das Ergebnis in Normalform an: $ (z1)^pow + z2 = #res $
+- Berechne den folgenden **komplexen Term** und gebe das Ergebnis in Normalform an: $ {z1}^{pow} + z2 = $ #res
 ---
 
 ---
@@ -111,7 +111,7 @@ let z = 1/c + 1/c * 1i;
 let	a1 = z^1;
 let a2 = z^2;
 @text
-Bestimme die ersten $2$ **Folgenglieder** der komplexen Folge $(a_n)_{n \in \N} = ((1/c+1/c*i)^n)_{n \in \N}$
+Bestimme die ersten $2$ **Folgenglieder** der komplexen Folge $(a_n)_{n \in \N} = ((1/c+1/c \cdot i)^n)_{n \in \N}$
 - $n=1:$ #a1
 - $n=2:$ #a2
 (x) Die Folge ist **konvergent**
@@ -124,7 +124,7 @@ EXERCISE Komplexe Reihen
 let a:b = rand(2,6);
 @text
 Ist die folgende geometrische Reihe **absolut konvergent**?
-- $\sum_{k=0}^{\infty} (1/a + 1/b \cdot i)^k$
+- $\sum_{k=0}^{\infty} (\frac{1}{a} + \frac{1}{b} \cdot i)^k$
 (x) ja
 ( ) nein
 ---
