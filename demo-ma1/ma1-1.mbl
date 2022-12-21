@@ -1,6 +1,11 @@
 Grundlagen
 ##########
 
+Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. Some text here. 
+
+Mengen
+======
+
 ---
 EXERCISE Mengen
 @code
@@ -62,6 +67,9 @@ let B = set(a,a*2,a*3);
 Gegeben Sei die Menge $ "B" = \{ k \in \N | k=a \cdot n \text{und} n <= 3 \} $. Geben Sie die Menge **explizit** an:
 $"B"=$ #B
 ---
+
+Summen und Produkte
+===================
 
 ---
 EXERCISE Summe
