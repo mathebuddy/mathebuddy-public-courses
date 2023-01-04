@@ -13,8 +13,10 @@ let a/b/c = rand(1,5);
 let A = set(a, b, c);
 let B = set(a, c);
 @text
-Gegeben sei die Menge $"A"=A$. Ist die folgende Aussage wahr?
-[x] $B \subset A$
+Gegeben sei die Menge $"A"=A$.
+
+Ist die folgende Aussage wahr?
+[x] $B \subset "A"$
 ---
 
 ---
@@ -143,7 +145,7 @@ Sei $X \subset \R$.
 - $M \in \R$ heißt **Supremum** von $X$, falls $M$ eine #"obere" Schranke ist und keine kleinere #"obere" Schranke existiert.
 - $M \in \R$ heißt **Infimum** von $X$, falls $m$ eine #"untere" Schranke ist und keine größere #"untere" Schranke existiert.
 
-Füllen Sie den Lückentext aus.
+Fülle den Lückentext aus.
 ---
 
 ---
