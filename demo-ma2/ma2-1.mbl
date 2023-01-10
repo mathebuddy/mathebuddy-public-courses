@@ -72,7 +72,7 @@ let r = complex(c,d);
 let z1 = z2 * r;
 @text
 Seien $z_1=z1$ und $z_2=z2$ komplexe Zahlen.
-- Berechne den folgenden **Quotienten** und gebe das Ergebnis in Normalform an: $\frac{z_1}{z_2}=$ #res
+- Berechne den folgenden **Quotienten** und gebe das Ergebnis in Normalform an: $\frac{z_1}{z_2}=$ #r
 ---
 
 ---
