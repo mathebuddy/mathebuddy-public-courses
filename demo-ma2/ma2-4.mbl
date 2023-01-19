@@ -9,7 +9,7 @@ let f1(x,y,z) = a*x + b*y + c*z;
 let f2(x,y,z) = d*x + e*y + f*z;
 let f3(x,y,z) = g*x + h*y + i*z;
 @text
-Sei $ f : \R^3 \to \R^3 $; $ f(x,y,z) = (f_1,f_2,f_3) $ ein Vektorfeld.
+Sei $ f : \RR^3 \to \RR^3 $; $ f(x,y,z) = (f_1,f_2,f_3) $ ein Vektorfeld.
 Bestimme die **Komponentenfunktionen** von $f$:
 - $f_1(x,y,z)=$ #f1
 - $f_2(x,y,z)=$ #f2
@@ -171,7 +171,7 @@ let p1 = min(s) > 0;
 let p2 = max(s) < 0;
 let p3 = !(p1 || p2);
 @text
-Sei $"A"=A$ eine Matrix über $\R$.
+Sei $"A"=A$ eine Matrix über $\RR$.
 Welche der folgenden Aussagen ist korrekt?
 [$p1$] $"A"$ ist **positiv definit**
 [$p2$] $"A"$ ist **negativ definit**
@@ -190,7 +190,7 @@ let p1 = min(s) > 0;
 let p2 = max(s) < 0;
 let p3 = !(p1 || p2);
 @text
-Sei $"A"=A$ eine Matrix über $\R$.
+Sei $"A"=A$ eine Matrix über $\RR$.
 Welche der folgenden Aussagen ist korrekt?
 [$p1$] $"A"$ ist **positiv definit**
 [$p2$] $"A"$ ist **negativ definit**
