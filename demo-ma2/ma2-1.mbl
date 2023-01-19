@@ -32,7 +32,7 @@ let z = rand(1,5) + rand(1,5)*1i;
 let c = conj(z);
 let z2 = z * c;
 @text
-Sei $"z" \in \C$ und $"z"=z$.
+Sei $"z" \in \CC$ und $"z"=z$.
 - Berechne die zu $"z"$ **komplex konjugierte** Zahl: $\bar{"z"}=$ #c
 - Berechne $"z" \cdot \bar{"z"}=$ #z2
 ---
@@ -46,7 +46,7 @@ let y = 2 * a * b;
 let z = complex(x,y);
 let r = abs(z);
 @text
-Sei $"z" \in \C$ und $"z"=z$.
+Sei $"z" \in \CC$ und $"z"=z$.
 - Berechne $|"z"|=$ #r
 ---
 
@@ -58,7 +58,7 @@ let a:b = rand(2,5);
 let c = a^2 + b^2;
 let r = complex(a,b);
 @text
-Sei $"z" \in \C$ und $z=\frac{a}{c}-\frac{b}{c} \cdot i $.
+Sei $"z" \in \CC$ und $z=\frac{a}{c}-\frac{b}{c} \cdot i $.
 - Berechne $\frac{1}{z}=$ #r
 ---
 
@@ -95,7 +95,7 @@ let a1 = z^1;
 let a2 = z^2;
 let a3 = z^3;
 @text
-Bestimme die ersten $3$ **Folgenglieder** der komplexen Folge $(a_n)_{n \in \N} = {(c \cdot i)^n}_{n \in \N}$
+Bestimme die ersten $3$ **Folgenglieder** der komplexen Folge $(a_n)_{n \in \NN} = {(c \cdot i)^n}_{n \in \NN}$
 - $n=1:$ #a1
 - $n=2:$ #a2
 - $n=3:$ #a3
@@ -111,7 +111,7 @@ let z = 1/c + 1/c * 1i;
 let	a1 = z^1;
 let a2 = z^2;
 @text
-Bestimme die ersten $2$ **Folgenglieder** der komplexen Folge $(a_n)_{n \in \N} = ((1/c+1/c \cdot i)^n)_{n \in \N}$
+Bestimme die ersten $2$ **Folgenglieder** der komplexen Folge $(a_n)_{n \in \NN} = ((1/c+1/c \cdot i)^n)_{n \in \NN}$
 - $n=1:$ #a1
 - $n=2:$ #a2
 (x) Die Folge ist **konvergent**
@@ -135,7 +135,7 @@ EXERCISE Komplexe Nullstellen
 let a = rand(2,8)^2;
 let z1 = sqrt(a) * 1i;
 let z2 = -z1;
-let r = set(z1,z2);
+let res = set(z1,z2);
 @text
 Gegeben sei das Polynom $f(z) = z^2 + a$
 - Bestimme die beiden **Nullstellen**: $z=$ #res
@@ -153,8 +153,8 @@ let C = -sqrt(ee)*1i;
 let res = set(A,B,C);
 @text
 Gegeben sei die folgende rationale Funktion:
-- $r(z) = \frac{(a+b*i)*z+c*i+d}{z*(z^2+ee)}$
-Bestimme den Definitionsbereich $D_r = \C \setminus X$
+- $r(z) = \frac{(a+b i) \cdot z+c i+d}{z \cdot (z^2+ee)}$
+Bestimme den Definitionsbereich $D_r = \CC \setminus X$
 - $X=$ #res
 *Hinweis: Gebe komplexe Zahlen in der Form $"a"+"b"i$ ein*
 ---
