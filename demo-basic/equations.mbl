@@ -53,9 +53,9 @@ Equations may be written in plain TeX code. We introduce some (optional) abbrevi
 Numbers
 -------
 
-- $\R$
-- $\N$
-- $\Z$
+- $\RR$
+- $\NN$
+- $\ZZ$
 - $\C$
 
 Matrices
