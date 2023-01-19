@@ -79,19 +79,19 @@ let sb = b mod b2;
 let sc = c2*c3 mod c2;
 @text
 Geben Sie jeweils den **Standardrepräsentanten** an:
-- $ \Z_c2: c2 \cdot c3 \equiv$ #sc $\mod c2 $
-- $ \Z_a2: a \equiv$  #sa  $\mod a2 $
-- $ \Z_b2: b \equiv$  #sb  $\mod b2 $
+- $ \ZZ_c2: c2 \cdot c3 \equiv$ #sc $\mod c2 $
+- $ \ZZ_a2: a \equiv$  #sa  $\mod a2 $
+- $ \ZZ_b2: b \equiv$  #sb  $\mod b2 $
 ---
 
 ---
 EXERCISE Körper
 @text
 Welche der folgenden Restklassen sind **Körper**?
-[x] $\Z_3$
-[ ] $\Z_4$
-[x] $\Z_7$
-[ ] $\Z_{10}$
+[x] $\ZZ_3$
+[ ] $\ZZ_4$
+[x] $\ZZ_7$
+[ ] $\ZZ_{10}$
 ---
 
 ---
@@ -115,10 +115,10 @@ EXERCISE Untervektorräume
 @code
 let a:b:c:d = rand(1,5);
 @text
-Welche der folgenden Mengen sind Untervektorräume des $\R^2$?
+Welche der folgenden Mengen sind Untervektorräume des $\RR^2$?
 [ ] $ M_1 = \{ \MAT{a;b} \} $
 [x] $ M_2 = \{ \MAT{0;0} \} $
-[ ] $ M_3 = \{ \mu \cdot \MAT{c;d} ~|~ \mu \in \Z } $
+[ ] $ M_3 = \{ \mu \cdot \MAT{c;d} ~|~ \mu \in \ZZ } $
 ---
 
 ---
@@ -194,7 +194,7 @@ A[0,0] = 0;
 A[0,1] = 0;
 let d = det(A);
 @text
-Sei $"A"=A$ eine $3 \times 3$ Matrix über $K=\R$.
+Sei $"A"=A$ eine $3 \times 3$ Matrix über $K=\RR$.
 Berechnen die **Determinante**:
 - $ \det("A")=$ #d
 ---
@@ -205,7 +205,7 @@ EXERCISE Rang
 let A = rand<3,3>(0,2);
 let r = rank(A);
 @text
-Sei $"A"=A$ eine $3 \times 3$ Matrix über $K=\R$.
+Sei $"A"=A$ eine $3 \times 3$ Matrix über $K=\RR$.
 Bestimme den **Rang**:
 - $ rg("A")=$ #r
 ---
@@ -228,7 +228,7 @@ EXERCISE Lineare Abbildungen
 @code
 let a:b:c:d = rand(2,9);
 @text
-Ist $f:\R^2\to\R^2$, $f(x_1,x_2)=(a x_1 + b x_2, c x_1 + d)$ eine **lineare Abbildung**?
+Ist $f:\RR^2\to\RR^2$, $f(x_1,x_2)=(a x_1 + b x_2, c x_1 + d)$ eine **lineare Abbildung**?
 ( ) ja
 (x) nein
 ---
@@ -240,7 +240,7 @@ let A = rand<2,3>(2,9);
 A[0,1] = 0;
 @text
 Sei die folgende **lineare Abbildung** gegeben:
-- $ f:\R^3 \to \R^2 = (a \cdot x_1 + b \cdot x_3, c \cdot x_2 + d \cdot x_3 + e \cdot x_1)$
+- $ f:\RR^3 \to \RR^2 = (a \cdot x_1 + b \cdot x_3, c \cdot x_2 + d \cdot x_3 + e \cdot x_1)$
 Gebe die zugehörige Abbildungsmatrix $"A"$ an:
 - $ "A"=$ #A
 ---
@@ -292,7 +292,7 @@ let B = rand<3,3>(0,2);
 B[2,2] = 0;
 let q2 = det(B) != 0;
 @text
-Bilden die folgenden Vektoren eine **Basis** des $\R^3$?
+Bilden die folgenden Vektoren eine **Basis** des $\RR^3$?
 *Hinweis: Bestimme zunächst die Determinante.*
 [q1] $ A[:,1], A[:,2], A[:,3] $
 [q2] $ B[:,1], B[:,2], B[:,3] $
@@ -308,10 +308,10 @@ let y = 2 * a * b;
 let c1 = -y;
 let c2 = 1 / sqrt(x^2 + y^2);
 @text
-Bestimme $c_1 \in \R$, sodass die folgenden beiden Vektoren eine **Orthogonalbasis** des $\R^2$ bilden:
+Bestimme $c_1 \in \RR$, sodass die folgenden beiden Vektoren eine **Orthogonalbasis** des $\RR^2$ bilden:
 - $ "b_1"=[[x],[y]]$ $ "b_2"=[[c_1],[x]]$
 - $c_1=$ #c1
-Bestimme nun $c_2 \in \R$, sodass die Basis $\{ c_2 \cdot "b_1", c_2 \cdot "b_2" \}$ eine **Orthonormalbasis** ist.
+Bestimme nun $c_2 \in \RR$, sodass die Basis $\{ c_2 \cdot "b_1", c_2 \cdot "b_2" \}$ eine **Orthonormalbasis** ist.
 - $c_2=$ #c2
 ---
 
@@ -325,7 +325,7 @@ let qb = (B * transpose(B)) == E2;
 let qc = (C * transpose(C)) == E2;
 let qd = (D * transpose(D)) == E2;
 @text
-Welche der folgenden Matrizen über $\R$ sind **orthogonal**?
+Welche der folgenden Matrizen über $\RR$ sind **orthogonal**?
 [$qa$] $A$
 [$qb$] $B$
 [$qc$] $C$
@@ -340,7 +340,7 @@ let d = rand(2,4);
 let a = c^2 + d^2;
 let b = -c;
 @text
-Bestimme $a, b \in \R$, sodass die folgende Matrix über $\R$ **orthogonal** ist:
+Bestimme $a, b \in \RR$, sodass die folgende Matrix über $\RR$ **orthogonal** ist:
 - $ \frac{1}{\sqrt{"a"}} [[c,d],[d,"b"]] $
 $"a"=$ #a $"b"=$ #b
 ---
