@@ -9,7 +9,7 @@ let a = rand(2,5);
 @text
 Löse die folgende DGL: $y$:
 - $"y"(x) = \pm$ #y
-*Hinweis: Gebe die Konstante $C \in \R$ mit einem großen `C`, sowie die Wurzel von $x$ mit `sqrt(x)` an.*
+*Hinweis: Gebe die Konstante $C \in \RR$ mit einem großen `C`, sowie die Wurzel von $x$ mit `sqrt(x)` an.*
 ---
 
 % TODO: migrate old SELL ODE exercises
