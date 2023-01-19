@@ -69,7 +69,7 @@ EXERCISE Mengen
 let a = rand(1,5);
 let B = set(a,a*2,a*3);
 @text
-Gegeben Sei die Menge $ "B" = \{ k \in \N | k=a \cdot n \text{und} n <= 3 \} $. Geben Sie die Menge **explizit** an:
+Gegeben Sei die Menge $ "B" = \{ k \in \NN | k=a \cdot n \text{und} n <= 3 \} $. Geben Sie die Menge **explizit** an:
 $"B"=$ #B
 ---
 
@@ -133,7 +133,7 @@ Bestimme den Binomialkoeffizienten $\mat{n\\k}$ mit Hilfe des **Pascalschen Drei
 ---
 EXERCISE Intervalle reeller Zahlen
 @text
-Seien $ a, b \in \R $.
+Seien $ a, b \in \RR $.
 Wähle die richtigen Antworten aus:
 [x] $ [a, b] $ ist ein geschlossenes Intervall
 [x] $ [a, b[ $ ist ein halboffenes Intervall
@@ -144,9 +144,9 @@ Wähle die richtigen Antworten aus:
 ---
 EXERCISE Supremum, Infimum
 @text
-Sei $X \subset \R$.
-- $M \in \R$ heißt **Supremum** von $X$, falls $M$ eine #"obere" Schranke ist und keine kleinere #"obere" Schranke existiert.
-- $M \in \R$ heißt **Infimum** von $X$, falls $m$ eine #"untere" Schranke ist und keine größere #"untere" Schranke existiert.
+Sei $X \subset \RR$.
+- $M \in \RR$ heißt **Supremum** von $X$, falls $M$ eine #"obere" Schranke ist und keine kleinere #"obere" Schranke existiert.
+- $M \in \RR$ heißt **Infimum** von $X$, falls $m$ eine #"untere" Schranke ist und keine größere #"untere" Schranke existiert.
 
 Fülle den Lückentext aus.
 ---
@@ -199,9 +199,9 @@ EXERCISE Aussagenlogik
 let a:b:c:d = rand(3,5);
 @text
 Welche der folgenden Ausdrücke sind **wahre Aussagen**?
-[ ] Die Menge $M=\{k \in \N | k=2 m \text{und} m>3 \}$ hat 3 Elemente.
+[ ] Die Menge $M=\{k \in \NN | k=2 m \text{und} m>3 \}$ hat 3 Elemente.
 [ ] $a + b \cdot c$.
-[x] $\exists x \in \Z ~~ x < 0$
+[x] $\exists x \in \ZZ ~~ x < 0$
 [x] Die Gleichung $a x + c = d$ besitzt genau eine Lösung.
 ---
 
@@ -209,10 +209,10 @@ Welche der folgenden Ausdrücke sind **wahre Aussagen**?
 EXERCISE Aussagenlogik
 @text
 Welche der folgenden Aussagen sind wahr?
-[ ]   $ \exists x \in \R ~~ x < x  $
-[x]   $ \forall y \in \Z ~~ y^2 >= 0 $
-[ ]   $ \forall z \in \R ~~ (z <= 0  \land  z > 0) $
-[x]   $ \forall z \in \R ~~ (z <= 0  \lor  z > 0) $
+[ ]   $ \exists x \in \RR ~~ x < x  $
+[x]   $ \forall y \in \ZZ ~~ y^2 >= 0 $
+[ ]   $ \forall z \in \RR ~~ (z <= 0  \land  z > 0) $
+[x]   $ \forall z \in \RR ~~ (z <= 0  \lor  z > 0) $
 ---
 
 ---
@@ -221,7 +221,7 @@ EXERCISE Injektivität, Surjektivität, Bijektivität
 let a = rand(2,10);
 @text
 Betrachten Sie die folgende Abbildung und wählen Sie die richtigen Antworten aus:
-$ f : \R \to [a,\infty[, ~~  f(x) = x^2 + a $
+$ f : \RR \to [a,\infty[, ~~  f(x) = x^2 + a $
 [ ] $f$ ist injektiv.
 [x] $f$ ist surjektiv.
 [ ] $f$ ist bijektiv.
@@ -232,7 +232,7 @@ EXERCISE Verkettung von Funktionen
 @code
 let a:b:c = rand(2,5);
 @text
-Sei  $ f : \R \to \R, f(x) = a \cdot x + b $ und $ g : \R \to \R, g(x) = x^c $.
+Sei  $ f : \RR \to \RR, f(x) = a \cdot x + b $ und $ g : \RR \to \RR, g(x) = x^c $.
 Wähle die richtige Antwort aus:
 (x) $ (g \circ f)(x) = (a \cdot x + b)^c $
 ( ) $ (g \circ f)(x) = a \cdot x^c + b $
@@ -253,7 +253,7 @@ EXERCISE Beschränktheit
 @code
 let a = rand(2,5);
 @text
-Sei $ f : \R -> \R, x \mapsto (x+a)^2 $.
+Sei $ f : \RR -> \RR, x \mapsto (x+a)^2 $.
 Wählen Sie die richtigen Antworten aus:
 [x] $f$ ist nach **unten beschränkt**.
 [ ] $f$ ist nach **oben beschränkt**.
@@ -265,10 +265,10 @@ EXERCISE Monotonie
 let a:b:c:d = rand(2,5);
 @text
 Wählen Sie die richtigen Antworten aus:
-[ ] $ f : \R \to \R, f(x)=a $ ist **monoton wachsend**.
-[x] $ f : \R \to \R, f(x)=b x + c $ ist **streng monoton wachsend**.
-[ ] $ f : \R \to \R, f(x)=|x| $ ist **streng monoton wachsend**.
-[x] $ f : \R \to \R, f(x)=-x^3-x-d $ ist **streng monoton fallend**.
+[ ] $ f : \RR \to \RR, f(x)=a $ ist **monoton wachsend**.
+[x] $ f : \RR \to \RR, f(x)=b x + c $ ist **streng monoton wachsend**.
+[ ] $ f : \RR \to \RR, f(x)=|x| $ ist **streng monoton wachsend**.
+[x] $ f : \RR \to \RR, f(x)=-x^3-x-d $ ist **streng monoton fallend**.
 ---
 
 ---
