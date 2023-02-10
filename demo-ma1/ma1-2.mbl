@@ -17,7 +17,7 @@ EXERCISE Nullstellen
 let a:b:u = rand(3,6);
 let v = u * (a + b);
 let w = u * (a * b);
-let r = set(a,b);
+let r = {a,b};
 @text
 Bestimme die Nullstellen von $ f(x) = u \cdot x^2 - v \cdot x + w $:
 - #r
