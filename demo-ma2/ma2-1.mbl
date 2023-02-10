@@ -135,7 +135,7 @@ EXERCISE Komplexe Nullstellen
 let a = rand(2,8)^2;
 let z1 = sqrt(a) * 1i;
 let z2 = -z1;
-let res = set(z1,z2);
+let res = {z1,z2};
 @text
 Gegeben sei das Polynom $f(z) = z^2 + a$
 - Bestimme die beiden **Nullstellen**: $z=$ #res
@@ -150,7 +150,7 @@ let ee = rand(2,9)^2;
 let A = 0*1i;
 let B = sqrt(ee)*1i;
 let C = -sqrt(ee)*1i;
-let res = set(A,B,C);
+let res = {A,B,C};
 @text
 Gegeben sei die folgende rationale Funktion:
 - $r(z) = \frac{(a+b i) \cdot z+c i+d}{z \cdot (z^2+ee)}$
