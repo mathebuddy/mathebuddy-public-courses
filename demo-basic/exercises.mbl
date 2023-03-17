@@ -82,7 +82,7 @@ EXERCISE Multiplication
   let x/y = rand(10, 20);
   let z = x * y;
 @text
-  $x * y=$ #z
+  $x \cdot y=$ #z
 @solution-z
   choices: 4
 ---
@@ -90,7 +90,7 @@ EXERCISE Multiplication
 ---
 EXERCISE Simple Integration @ex:intSimple
 @code
-  F(x) = 1/3*x^3 + 7*x
+  let F(x) = 1/3*x^3 + 7*x
 @text
   Solve $\int (x^2+7) \dx =$  #F  $+C$
 @solution-F
