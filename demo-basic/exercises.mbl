@@ -110,8 +110,8 @@ EXERCISE Scoring example
   let fa = fac(a)
   let fb = fac(b)
 @text
-  Calculate $ a! = $ #fa/1
-  Calculate $ b! = $ #fb/2
+  Calculate $ a! = $ #fa
+  Calculate $ b! = $ #fb
 @solution-fb     % if scores are not given for a solution, the
   score: 2       % value 1 is taken.
 ---
