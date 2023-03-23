@@ -74,7 +74,8 @@ EXERCISE Division
   let z1 = z2 * r;
 @text
 Seien $z_1=z1$ und $z_2=z2$ komplexe Zahlen.
-- Berechne den folgenden **Quotienten** und gebe das Ergebnis in Normalform an: $\frac{z_1}{z_2}=$ #r
+Berechne den folgenden **Quotienten** und gebe das Ergebnis in Normalform an:
+- $\frac{z_1}{z_2}=$ #r
 ---
 
 ---
@@ -87,7 +88,7 @@ EXERCISE Komplexe Terme
   let res = z1^pow + z2;
 @text
 Berechne den folgenden **komplexen Term** und gebe das Ergebnis in Normalform an:
-- $ {z1}^{pow} + z2 = $ #res
+- $ (z1)^{pow} + z2 = $ #res
 ---
 
 ---
@@ -129,7 +130,7 @@ EXERCISE Komplexe Reihen
 @text
 Ist die folgende geometrische Reihe **absolut konvergent**?
 
-EQUATION
+EQUATION*
 \sum_{k=0}^{\infty} \left( \frac{1}{a} + \frac{1}{b} \cdot i \right)^k
 END
 
