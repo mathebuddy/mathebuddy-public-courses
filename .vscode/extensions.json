@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "streetsidesoftware.code-spell-checker-german",
-    "ms-python.python"
+    "ms-python.python",
+    "mathebuddy.mbl-language-extension"
   ]
 }

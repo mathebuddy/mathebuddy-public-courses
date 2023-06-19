@@ -14,8 +14,7 @@ My section @sec:mySection
 Some text in [red]@color1 color.
 
 My subsection @subsec:mySubSection
--------------
-
+----------
 Refer to @sec:mySection.
 
 An itemization:
@@ -32,23 +31,16 @@ An alpha enumeration
 -) first item
 -) second item
 
----
 NEWPAGE
----
 
 Bold, italic and colored text
------------------------------
-
+--------------------------
 Some **bold** text. Some *italic* text.
 The word [sky]@color1 is written in primary color.
 [Some text written in the secondary color.]@color2.
 You can also write [bold text]@bold and [italic text]@italic similar to color notation.
 
 Text alignment
---------------
-
----
+-----------
 CENTER
-This text is centered.
----
-
+    This text is centered.
