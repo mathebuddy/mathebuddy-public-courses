@@ -8,7 +8,7 @@ EXERCISE Reelle Folgen
         let a1 = x/2
         let a2 = 2*x/3
         let a3 = 3*x/4
-    Bestimme die ersten drei Glieder der reellen Folge $ (a_n)_{n \in \NN} = ( \frac{x\cdot n}{n+1} )_{n \in \NN} $
+    Bestimme die ersten drei Glieder der reellen Folge $ (a_n)_{n \in \NN} = \left( \frac{x\cdot n}{n+1} \right)_{n \in \NN} $
     - $n=1:$ #a1
     - $n=2:$ #a2
     - $n=3:$ #a3
@@ -45,8 +45,8 @@ EXERCISE Häufungspunkte
     CODE
         let x:y:z = rand(2,5)
     Welche der Folgen besitzt **zwei** Häufungspunkte?
-    [x] $ (a_n)_{n \in \NN} $ mit $ a_n = (-1)^n \frac{n^2-x}{n^2-y} $
-    [ ] $ (a_n)_{n \in \NN} $ mit $ a_n = 1^n \frac{n^2-x}{n^2-y} $
+    [x] $ (a_n)_{n \in \NN} $ mit $ a_n = (-1)^n ~ \frac{n^2-x}{n^2-y} $
+    [ ] $ (a_n)_{n \in \NN} $ mit $ a_n = 1^n ~ \frac{n^2-x}{n^2-y} $
 
 EXERCISE Konvergente Folgen
     CODE
@@ -96,7 +96,7 @@ EXERCISE Potenzreihe
         let k0 = 1 / fac(0) * (a*x)^0
         let k1 = 1 / fac(1) * (a*x)^1
         let k2 = 1 / fac(2) * (a*x)^2
-    Geben Sie die ersten **drei Summanden der Potenzreihe** von $ e^{a \cdot "x"} $ an. Weiterhin sei $ "x" = 1/b $:
+    Geben Sie die ersten **drei Summanden der Potenzreihe** von $ e^{a \cdot "x"} $ an. Weiterhin sei $ "x" = \frac{1}{b} $:
     - $ k=0: $ #k0
     - $ k=1: $ #k1
     - $ k=2: $ #k2
@@ -116,9 +116,9 @@ EXERCISE Grenzwerte
         let res2 = 0
         let res3 = u^v
     Bestimme die folgenden Grenzwerte:
-    - $ \lim_{x \to \infty} (a \cdot x-b)/x=$ #res1
-    - $ \lim_{x \to -\infty} e^(c \cdot x)=$ #res2
-    - $ \lim_{x \to \infty} ( (u \cdot x^2+a)/(x^2+x+b) )^v=$ #res3
+    - $ \lim_{x \to \infty} \frac{a \cdot x-b}{x}=$ #res1
+    - $ \lim_{x \to -\infty} e^{c \cdot x}=$ #res2
+    - $ \lim_{x \to \infty} \left( \frac{u \cdot x^2+a}{x^2+x+b} \right)^v=$ #res3
 
 EXERCISE Stetigkeit
     CODE
@@ -130,9 +130,9 @@ EXERCISE Stetigkeit
         let a6:b6 = rand(3,8)
         let a7:b7 = rand(2,4)
         let c7 = rand(5,7)
-    Welche der folgenden Funktionen sind auf ganz $RR$ stetig?
+    Welche der folgenden Funktionen sind auf ganz $\RR$ stetig?
     [x] $f(x) = a1 \cdot x^3 + b1 \cdot x^2 + c1 \cdot x + d1$
-    [x] $f(x) = a2 \cdot sin(b2 \cdot x)$
+    [x] $f(x) = a2 \cdot \sin(b2 \cdot x)$
     [x] $f(x)= \frac{a3 \cdot x^2}{x}$
     [x] $f(x)= a4 \cdot e^{b4 \cdot x+c4}$
     [ ] $f(x)= a5 \cdot \sqrt{b5 \cdot x}$
