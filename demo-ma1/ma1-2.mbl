@@ -5,7 +5,7 @@ EXERCISE Polynome
     CODE
         let n:u = rand(4,8)
         let grad = n + u
-    Sei $ f : \RR \to \RR, f(x) = \sum_{k=0}^n a_{k} x^{k+u} $ mit $ a_n, ..., a_1, a_0 \in \RR $ und $a_n != 0$
+    Sei $ f : \RR \to \RR $ , $ f(x) = \sum_{k=0}^n a_{k} x^{k+u} $ mit $ a_n, ..., a_1, a_0 \in \RR $ und $a_n \neq 0$
     Das Polynom $f$ hat den Grad #grad
 
 EXERCISE Nullstellen
