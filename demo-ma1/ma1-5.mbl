@@ -37,7 +37,7 @@ EXERCISE Bestimmtes Integral
         let b = rand(4,5)
         let u = rand(3,8)
         let f(x) = u
-        let f_int = integrate(f, x, a, b)
+        let f_int = int(f, x, a, b)
     Bestimme das folgende **bestimmte** Integral:
     - $ \int_a^b f \dx = $ #f_int
 
