@@ -51,7 +51,7 @@ EXERCISE Mengen
     CODE
         let a = rand(1,5)
         let B = {a,a*2,a*3}
-    Gegeben Sei die Menge $ "B" = \{ k \in \NN | k=a \cdot n \text{und} n <= 3 \} $. Geben Sie die Menge **explizit** an:
+    Gegeben Sei die Menge $ "B" = \{ k \in \NN | k=a \cdot n ~\text{und}~ n \leq 3 \} $. Geben Sie die Menge **explizit** an:
 
     $"B"=$ #B
 
@@ -154,7 +154,7 @@ EXERCISE Aussagenlogik
     CODE
         let a:b:c:d = rand(3,5)
     Welche der folgenden Ausdrücke sind **wahre Aussagen**?
-    [ ] Die Menge $M=\{k \in \NN | k=2 m \text{und} m>3 \}$ hat 3 Elemente.
+    [ ] Die Menge $M=\{k \in \NN | k=2 m ~\text{und}~ m>3 \}$ hat 3 Elemente.
     [ ] $a + b \cdot c$.
     [x] $\exists x \in \ZZ ~~ x < 0$
     [x] Die Gleichung $a x + c = d$ besitzt genau eine Lösung.
@@ -162,9 +162,9 @@ EXERCISE Aussagenlogik
 EXERCISE Aussagenlogik
     Welche der folgenden Aussagen sind wahr?
     [ ] $ \exists x \in \RR ~~ x < x  $
-    [x] $ \forall y \in \ZZ ~~ y^2 >= 0 $
-    [ ] $ \forall z \in \RR ~~ (z <= 0  \land  z > 0) $
-    [x] $ \forall z \in \RR ~~ (z <= 0  \lor  z > 0) $
+    [x] $ \forall y \in \ZZ ~~ y^2 \geq 0 $
+    [ ] $ \forall z \in \RR ~~ (z \leq 0  \land  z > 0) $
+    [x] $ \forall z \in \RR ~~ (z \leq 0  \lor  z > 0) $
 
 EXERCISE Injektivität, Surjektivität, Bijektivität
     CODE
@@ -178,7 +178,7 @@ EXERCISE Injektivität, Surjektivität, Bijektivität
 EXERCISE Verkettung von Funktionen
     CODE
         let a:b:c = rand(2,5)
-    Sei  $ f : \RR \to \RR, f(x) = a \cdot x + b $ und $ g : \RR \to \RR, g(x) = x^c $.
+    Sei  $ f : \RR \to \RR $, $ f(x) = a \cdot x + b $ und $ g : \RR \to \RR, g(x) = x^c $.
     Wähle die richtige Antwort aus:
     (x) $ (g \circ f)(x) = (a \cdot x + b)^c $
     ( ) $ (g \circ f)(x) = a \cdot x^c + b $
@@ -193,7 +193,7 @@ EXERCISE Gerade und ungerade Funktionen
 EXERCISE Beschränktheit
     CODE
         let a = rand(2,5)
-    Sei $ f : \RR -> \RR, x \mapsto (x+a)^2 $.
+    Sei $ f : \RR \to \RR, x \mapsto (x+a)^2 $.
     Wählen Sie die richtigen Antworten aus:
     [x] $f$ ist nach **unten beschränkt**.
     [ ] $f$ ist nach **oben beschränkt**.
