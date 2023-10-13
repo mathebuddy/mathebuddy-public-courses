@@ -11,7 +11,7 @@ EXERCISE Ableitungen
         let a = rand(3,8)
         let f1(x) = a
         let f1d(x) = diff(f1, x)
-    $f(x) = @f1$
+    $f(x) = f1$
 
     $f'(x)=$ #f1d
 
@@ -20,7 +20,7 @@ EXERCISE Ableitungen
         let a = rand(3,8)
         let f1(x) = a * x
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -29,7 +29,7 @@ EXERCISE Ableitungen
         let a:b = rand(3,8)
         let f1(x) = a * x^b
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -38,16 +38,16 @@ EXERCISE Ableitungen
         let a:b:c = rand(3,8)
         let f1(x) = a*x^2 + b*x + c
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE 
         let a:b = rand(3,8)
-        f1(x) = a / x
-        f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+        let f1(x) = a / x
+        let f1_deriv(x) = diff(f1, x)
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -56,7 +56,7 @@ EXERCISE Ableitungen
         let a:b:c:d = rand(2,4)
         let f1(x) = (a*x^3 + b*x) * (c*x + d)
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -64,7 +64,7 @@ EXERCISE Ableitungen
     CODE
         let f1(x) = exp(x)
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -72,7 +72,7 @@ EXERCISE Ableitungen
     CODE
         let f1(x) = sin(x)
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -80,7 +80,7 @@ EXERCISE Ableitungen
     CODE
         let f1(x) = cos(x)
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -89,7 +89,7 @@ EXERCISE Ableitungen
         let a = rand(3,8)
         let f1(x) = a * x * exp(x)
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -98,7 +98,7 @@ EXERCISE Ableitungen
         let a:b = rand(3,8)
         let f1(x) = a * exp(b*x)
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -107,7 +107,7 @@ EXERCISE Ableitungen
         let a:b:c = rand(3,8)
         let f1(x) = sin(a * x^2 + b*x + c)
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -116,7 +116,7 @@ EXERCISE Ableitungen
         let a:b = rand(3,8)
         let f1(x) = sin(a*x) + cos(b*x)
         let f1_deriv(x) = diff(f1, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
@@ -127,7 +127,7 @@ EXERCISE Höhere Ableitungen
         let f1_deriv_1(x) = diff(f1, x)
         let f1_deriv_2(x) = diff(f1_deriv_1, x)
         let f1_deriv_3(x) = diff(f1_deriv_2, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv_1
 
@@ -142,7 +142,7 @@ EXERCISE Höhere Ableitungen
         let f1_deriv_1(x) = diff(f1, x)
         let f1_deriv_2(x) = diff(f1_deriv_1, x)
         let f1_deriv_3(x) = diff(f1_deriv_2, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv_1
 
@@ -157,7 +157,7 @@ EXERCISE Höhere Ableitungen
         let f1_deriv_1(x) = diff(f1, x)
         let f1_deriv_2(x) = diff(f1_deriv_1, x)
         let f1_deriv_3(x) = diff(f1_deriv_2, x)
-    $ f(x) = @f1 $
+    $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv_1
 
@@ -178,16 +178,16 @@ EXERCISE Stationäre Stellen
         let f1_deriv_1(x) = diff(f1, x)
         let f1_deriv_2(x) = diff(f1_deriv_1, x)
         let s = 0
-    Sei $ f(x) = @f1 $. Bestimme die stationäre Stelle: $x_0=$ #s
+    Sei $ f(x) = f1 $. Bestimme die stationäre Stelle: $x_0=$ #s
     Dann besitzt $f$ in $x_0$:
     ( ) ein lokales Maximum
     (x) ein lokales Minimum
 
 EXERCISE Krümmung
     Sei $f$ eine auf $[a,b]$ stetige und auf $]a,b[$ zweimal differenzierbare Funktion.
-    Gilt $f''(x)>0$ für alle $x in ]a,b[$, so ist $f$ auf dem Intervall $]a,b[$
-    (x) **linksgekrümmt oder konvex**.
-    ( ) **rechtsgekrümmt oder konkav**.
+    Gilt $f''(x)>0$ für alle $x \in ]a,b[$, so ist $f$ auf dem Intervall $]a,b[$
+    (x) linksgekrümmt oder konvex.
+    ( ) rechtsgekrümmt oder konkav.
 
 EXERCISE Taylorpolynom
     CODE
@@ -198,7 +198,7 @@ EXERCISE Taylorpolynom
         let p0(x) = f(x0) / fac(0) * (x - x0)^0
         let p1(x) = f1(x0) / fac(1) * (x - x0)^1
         let p2(x) = f2(x0) / fac(2) * (x - x0)^2
-    Bestimme das zweite Taylorpolynom $p_2(x) = \sum_{k=0}^2 ( "f"^(k)(x_0) ) / ( k ) (x-x_0)^k $ für $"f"(x)=f$ und $x_0=0$:
+    Bestimme das zweite Taylorpolynom $p_2(x) = \sum_{k=0}^2 \frac{ "f"^{(k)}(x_0) }{ k } (x-x_0)^k $ für $"f"(x)=f$ und $x_0=0$:
     - $ p_0(x) =$ #p0
     - $ p_1(x) =$ #p1
     - $ p_2(x) =$ #p2
@@ -214,7 +214,7 @@ EXERCISE Taylorpolynom
         let p1(x) = f1(x0) / fac(1) * (x - x0)^1
         let p2(x) = f2(x0) / fac(2) * (x - x0)^2
         let p3(x) = f3(x0) / fac(3) * (x - x0)^3
-    Bestimme das dritte Taylorpolynom $p_3(x) = \sum_{k=0}^3 ( "f"^{(k)}(x_0) ) / ( k ) (x-x_0)^k $ für $"f"(x)=f$ und $x_0=0$:
+    Bestimme das dritte Taylorpolynom $p_3(x) = \sum_{k=0}^3 \frac{ "f"^{(k)}(x_0) }{ k } (x-x_0)^k $ für $"f"(x)=f$ und $x_0=0$:
     - $ p_0(x) = $ #p0
     - $ p_1(x) = $ #p1
     - $ p_2(x) = $ #p2
@@ -231,7 +231,7 @@ EXERCISE Taylorpolynom
         let p1(x) = f1(x0) / fac(1) * (x - x0)^1
         let p2(x) = f2(x0) / fac(2) * (x - x0)^2
         let p3(x) = f3(x0) / fac(3) * (x - x0)^3
-    Bestimme das dritte Taylorpolynom $p_3(x) = \sum_{k=0}^3 ( "f"^{(k)}(x_0) ) / ( k ) (x-x_0)^k $ für $"f"(x)=f$ und $x_0=0$:
+    Bestimme das dritte Taylorpolynom $p_3(x) = \sum_{k=0}^3 \frac{ "f"^{(k)}(x_0) }{ k } (x-x_0)^k $ für $"f"(x)=f$ und $x_0=0$:
     - $ p_0(x) = $ #p0
     - $ p_1(x) = $ #p1
     - $ p_2(x) = $ #p2
