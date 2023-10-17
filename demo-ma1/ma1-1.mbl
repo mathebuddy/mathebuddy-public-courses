@@ -202,13 +202,13 @@ EXERCISE Monotonie
     CODE
         let a:b:c:d = rand(2,5)
     Wählen Sie die richtigen Antworten aus:
-    [ ] $ f : \RR \to \RR, f(x)=a $ ist **monoton wachsend**.
+    [x] $ f : \RR \to \RR, f(x)=a $ ist **monoton wachsend**.
     [x] $ f : \RR \to \RR, f(x)=b x + c $ ist **streng monoton wachsend**.
     [ ] $ f : \RR \to \RR, f(x)=|x| $ ist **streng monoton wachsend**.
     [x] $ f : \RR \to \RR, f(x)=-x^3-x-d $ ist **streng monoton fallend**.
 
 EXERCISE Umkehrabbildung
     Eine Funktion $f$ besitzt genau dann eine Umkehrfunktion, wenn folgendes gilt:
-    [x] $f$ ist injektiv.
-    [x] $f$ ist surjektiv.
+    [ ] $f$ ist surjektiv oder injektiv.
+    [x] $f$ is surjektiv und injektiv.
     [x] $f$ ist bijektiv.
