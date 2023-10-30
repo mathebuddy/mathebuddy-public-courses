@@ -58,6 +58,14 @@ EXERCISE Matrix Multiplication @ex:add-mul
         let z = x * y
     Calculate $ x \cdot y = $ #z.
         
+EXERCISE Differentiation
+    CODE
+        let f(u,v) = u^2 + v^2
+        let fu(u,v) = diff(f,u)
+        let fv(u,v) = diff(f,v)
+    Let $"f"(u,v)=f$. 
+    Calculate $\frac{\partial"f"}{\partial u}(u,v)=$ #fu
+
 
 Mixed Exercises
 ===============
