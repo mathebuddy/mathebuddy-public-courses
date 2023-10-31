@@ -66,6 +66,13 @@ EXERCISE Differentiation
     Let $"f"(u,v)=f$. 
     Calculate $\frac{\partial"f"}{\partial u}(u,v)=$ #fu
 
+EXERCISE Integration
+    CODE
+        let u1 = rand(2,9)
+        let f(x) = u1
+    Calculate $ \int f ~ dx = $ #f,DIFF=x $ + C$
+    
+    $(C \in \RR)$
 
 Mixed Exercises
 ===============
@@ -122,17 +129,33 @@ EXERCISE Scoring example
 Gap Exercise
 ============
 
-EXERCISE My Gap Exercise  @ex:myLabel
-    SHOW_GAP_LENGTH=true
-    SHOW_REQUIRED_LETTERS_ONLY=true
-    Garfield is a #"cat". Rain is #"wet".
+EXERCISE My Gap Exercise 1  @ex:myLabel
+    This is a gap exercise with limited keys and hints on the number of letters.
+
+    Garfield is a #"cat".
+
+EXERCISE My Gap Exercise 2  @ex:myLabel
+    This is gap exercise with all letters and no length hint.
+
+    Rain is #"wet",HIDE_LENGTH,SHOW_ALL_LETTERS.
+
+
+Exercise with forced keyboard
+=============================
+
+EXERCISE Keyboard exapmle
+    CODE
+        let x = 5
+    This example shows how to change the keyboard for the input field to `integerSet`.
+    The answer is five.
+    
+    #x,KEYBOARD=integerSet
 
 
 Arrangement Exercise
 ====================
 
 EXERCISE Arrangement exercise
-    ARRANGE=true
     CODE
         let n = rand(5,10)        % length
         let f = zeros<n>()        % row vector for the sequence
@@ -141,9 +164,9 @@ EXERCISE Arrangement exercise
         for k from 2 to n-1 {     % calc sequence iteratively
             f[k] = f[k-2] + f[k-1]
         }
-    Arrange the following numbers to get the first numbers of the Fibonacci sequence: 
+    Arrange the following numbers to get the first numbers of the Fibonacci sequence (solution is $f$): 
     
-    #f
+    #f,ARRANGE
 
 
 Timed Exercise
