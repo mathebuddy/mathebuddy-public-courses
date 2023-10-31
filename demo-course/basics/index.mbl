@@ -11,7 +11,7 @@ AUTHOR
 
 UNIT My Unit A
     (0,0) a-start                 ICON icons/start.svg
-    (1,0) a-fun  !a-start
+    %(1,0) a-fun  !a-start
     (1,1) a-bla  !a-fun
 
 UNIT My Unit B
