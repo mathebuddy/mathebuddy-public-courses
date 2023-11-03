@@ -15,8 +15,8 @@ EXERCISE Begriffe
 
 EXERCISE Grenzen
     CODE
-        let a = rand(3,8)
-        let i = 0
+        a = rand(3,8)
+        i = 0
     Bestimme $ \int_a^a f(x) ~ dx = $ #i
 
 EXERCISE Eigenschaften des Riemann-Integrals
@@ -33,67 +33,67 @@ EXERCISE Integrierbarkeit
 
 EXERCISE Bestimmtes Integral
     CODE 
-        let a = rand(0,1)
-        let b = rand(4,5)
-        let u = rand(3,8)
-        let f(x) = u
-        let f_int = int(f, x, a, b)
+        a = rand(0,1)
+        b = rand(4,5)
+        u = rand(3,8)
+        f(x) = u
+        f_int = int(f, x, a, b)
     Bestimme das folgende **bestimmte** Integral:
     - $ \int_a^b f ~ dx = $ #f_int
 
 EXERCISE Unbestimmte Integrale
     CODE
-        let u1/u2 = rand(2,9)
-        let f(x) = u1
-        let g(y) = u2
+        u1/u2 = rand(2,9)
+        f(x) = u1
+        g(y) = u2
     Bestimme die folgenden **unbestimmten** Integrale:
     - $ \int f ~ dx = $ #f,DIFF=x $ + C ~~ (C \in \RR)$
     - $ \int g ~ dy = $ #g,DIFF=x $ + C ~~ (C \in \RR)$
 
 EXERCISE Stammfunktion
     CODE
-        let u = rand(3,8)
-        let f(x) = u * x
+        u = rand(3,8)
+        f(x) = u * x
     Bestimme die Stammfunktion zu $"f"(x) = f $
     $ F(x) = $ #[diff x]f $ + C ~~ (C \in \RR)$
 
 EXERCISE Stammfunktion
     CODE
-        let u:v = rand(3,8)
-        let f(x) = u + v * x
+        u:v = rand(3,8)
+        f(x) = u + v * x
     Bestimme die Stammfunktion zu $"f"(x) = f $
     $ F(x) = $ #[diff x]f $ + C ~~ (C \in \RR)$
 
 EXERCISE Stammfunktion
     CODE
-        let u = rand(3,8)
-        let f(x) = u * x^2
+        u = rand(3,8)
+        f(x) = u * x^2
     Bestimme die Stammfunktion zu $"f"(x) = f $
     $ F(x) = $ #[diff x]f $ + C ~~ (C \in \RR)$
 
 EXERCISE Stammfunktion
     CODE
-        let f(x) = cos(x)
+        f(x) = cos(x)
     Bestimme die Stammfunktion zu $"f"(x) = f $
     $ F(x) = $ #[diff x]f $ + C ~~ (C \in \RR)$
 
 EXERCISE Stammfunktion
     CODE
-        let a = rand(2,4)
-        let f(x) = a * sin(x)
+        a = rand(2,4)
+        f(x) = a * sin(x)
     Bestimme die Stammfunktion zu $"f"(x) = f $
     $ F(x) = $ #[diff x]f $ + C ~~ (C in RR)$
 
 EXERCISE Uneigentliches Integral
     CODE
-        let a = rand(3,8)
-        let f(x) = a / x^2
+        a = rand(3,8)
+        f(x) = a / x^2
     Bestimme das folgende uneigentliche Integral:
     $ \int_1^{\infty} f ~ dx = $ #a
 
 EXERCISE Uneigentliche Integrale
     CODE
-        let a:b:c:d:e = rand(3,4)
+        a:b:c:d:e = rand(3,4)
     Welche der folgenden Integrale sind **konvergent**?
     [ ] $\int_0^{\infty} a x^2 + b ~ dx$
     [ ] $\int_0^c \frac{d}{x} ~ dx $
@@ -101,46 +101,46 @@ EXERCISE Uneigentliche Integrale
 
 EXERCISE Partielle Integration
     CODE
-        let f(x) = x * exp(x)
+        f(x) = x * exp(x)
     Bestimme durch **partielle Integration:**
     $ \int f ~ dx = $ #[diff x]f $ + C ~~ (C \in \RR)$
     *Hinweis: Schreiben Sie $e^x$ als $exp(x)$.*
 
 EXERCISE Partielle Integration
     CODE
-        let f(x) = x * sin(x)
+        f(x) = x * sin(x)
     Bestimme durch **partielle Integration:**
     $ \int f ~ dx = $ #[diff x]f $ + C ~~ (C \in \RR)$
 
 EXERCISE Partielle Integration
     CODE
-        let f(x) = (x+1) / exp(x)
+        f(x) = (x+1) / exp(x)
     Bestimme durch **partielle Integration:**
     $ \int f ~ dx = $ #[diff x]f $ + C ~~ (C \in \RR)$
     *Hinweis: Schreiben Sie $e^x$ als $exp(x)$.*
 
 EXERCISE Substitutionsregel
     CODE
-        let f(x) = (x+1)^2
+        f(x) = (x+1)^2
     Bestimme durch **Substitution:**
     $ \int f ~ dx = #[diff x]f + C ~~ (C \in \RR)$
 
 EXERCISE Substitutionsregel
     CODE
-        let f(x) = exp(3*x-1)
+        f(x) = exp(3*x-1)
     Bestimme durch **Substitution:**
     $ \int f ~ dx = $ #[diff x]f $ + C ~~ (C \in \RR)$
     *Hinweis: Schreiben Sie $e^x$ als $exp(x)$.*
 
 EXERCISE Substitutionsregel
     CODE
-        let f(x) = 3*x * sin(x^2+1)
+        f(x) = 3*x * sin(x^2+1)
     Bestimme durch **Substitution:**
     $ \int f ~ dx = $ #[diff x]f $ + C ~~ (C \in \RR)$
 
 EXERCISE Partialbruchzerlegung
     CODE
-        let a:b = rand(3,5)
+        a:b = rand(3,5)
     Das folgende Integral soll gelöst werden:
     - $\int \frac{b}{x (x-a)^2} ~ dx$
     Welcher ist der richtige **Ansatz**?
@@ -151,9 +151,9 @@ EXERCISE Partialbruchzerlegung
 
 EXERCISE Partialbruchzerlegung
     CODE
-        let a:b = rand(2,5)
-        let c = 2*a
-        let d = a^2+b
+        a:b = rand(2,5)
+        c = 2*a
+        d = a^2+b
     Das folgende Integral soll gelöst werden:
     - $\int \frac{1}{x^2 + c x + d} ~ dx$
     Welcher ist der richtige **Ansatz**?

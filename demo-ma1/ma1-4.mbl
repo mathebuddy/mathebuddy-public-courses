@@ -8,125 +8,125 @@ EXERCISE Geradensteigung
 
 EXERCISE Ableitungen
     CODE
-        let a = rand(3,8)
-        let f1(x) = a
-        let f1d(x) = diff(f1, x)
+        a = rand(3,8)
+        f1(x) = a
+        f1d(x) = diff(f1, x)
     $f(x) = f1$
 
     $f'(x)=$ #f1d
 
 EXERCISE Ableitungen
     CODE
-        let a = rand(3,8)
-        let f1(x) = a * x
-        let f1_deriv(x) = diff(f1, x)
+        a = rand(3,8)
+        f1(x) = a * x
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE
-        let a:b = rand(3,8)
-        let f1(x) = a * x^b
-        let f1_deriv(x) = diff(f1, x)
+        a:b = rand(3,8)
+        f1(x) = a * x^b
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE
-        let a:b:c = rand(3,8)
-        let f1(x) = a*x^2 + b*x + c
-        let f1_deriv(x) = diff(f1, x)
+        a:b:c = rand(3,8)
+        f1(x) = a*x^2 + b*x + c
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE 
-        let a:b = rand(3,8)
-        let f1(x) = a / x
-        let f1_deriv(x) = diff(f1, x)
+        a:b = rand(3,8)
+        f1(x) = a / x
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE
-        let a:b:c:d = rand(2,4)
-        let f1(x) = (a*x^3 + b*x) * (c*x + d)
-        let f1_deriv(x) = diff(f1, x)
+        a:b:c:d = rand(2,4)
+        f1(x) = (a*x^3 + b*x) * (c*x + d)
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE
-        let f1(x) = exp(x)
-        let f1_deriv(x) = diff(f1, x)
+        f1(x) = exp(x)
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE
-        let f1(x) = sin(x)
-        let f1_deriv(x) = diff(f1, x)
+        f1(x) = sin(x)
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE
-        let f1(x) = cos(x)
-        let f1_deriv(x) = diff(f1, x)
+        f1(x) = cos(x)
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE
-        let a = rand(3,8)
-        let f1(x) = a * x * exp(x)
-        let f1_deriv(x) = diff(f1, x)
+        a = rand(3,8)
+        f1(x) = a * x * exp(x)
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE
-        let a:b = rand(3,8)
-        let f1(x) = a * exp(b*x)
-        let f1_deriv(x) = diff(f1, x)
+        a:b = rand(3,8)
+        f1(x) = a * exp(b*x)
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE
-        let a:b:c = rand(3,8)
-        let f1(x) = sin(a * x^2 + b*x + c)
-        let f1_deriv(x) = diff(f1, x)
+        a:b:c = rand(3,8)
+        f1(x) = sin(a * x^2 + b*x + c)
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Ableitungen
     CODE
-        let a:b = rand(3,8)
-        let f1(x) = sin(a*x) + cos(b*x)
-        let f1_deriv(x) = diff(f1, x)
+        a:b = rand(3,8)
+        f1(x) = sin(a*x) + cos(b*x)
+        f1_deriv(x) = diff(f1, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv
 
 EXERCISE Höhere Ableitungen
     CODE
-        let a:b:c = rand(3,8)
-        let f1(x) = a*x^2 + b*x + c
-        let f1_deriv_1(x) = diff(f1, x)
-        let f1_deriv_2(x) = diff(f1_deriv_1, x)
-        let f1_deriv_3(x) = diff(f1_deriv_2, x)
+        a:b:c = rand(3,8)
+        f1(x) = a*x^2 + b*x + c
+        f1_deriv_1(x) = diff(f1, x)
+        f1_deriv_2(x) = diff(f1_deriv_1, x)
+        f1_deriv_3(x) = diff(f1_deriv_2, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv_1
@@ -137,11 +137,11 @@ EXERCISE Höhere Ableitungen
 
 EXERCISE Höhere Ableitungen
     CODE
-        let a:b = rand(3,8)
-        let f1(x) = sin(a * x + b)
-        let f1_deriv_1(x) = diff(f1, x)
-        let f1_deriv_2(x) = diff(f1_deriv_1, x)
-        let f1_deriv_3(x) = diff(f1_deriv_2, x)
+        a:b = rand(3,8)
+        f1(x) = sin(a * x + b)
+        f1_deriv_1(x) = diff(f1, x)
+        f1_deriv_2(x) = diff(f1_deriv_1, x)
+        f1_deriv_3(x) = diff(f1_deriv_2, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv_1
@@ -152,11 +152,11 @@ EXERCISE Höhere Ableitungen
 
 EXERCISE Höhere Ableitungen
     CODE
-        let a = rand(3,8)
-        let f1(x) = a * x * exp(x)
-        let f1_deriv_1(x) = diff(f1, x)
-        let f1_deriv_2(x) = diff(f1_deriv_1, x)
-        let f1_deriv_3(x) = diff(f1_deriv_2, x)
+        a = rand(3,8)
+        f1(x) = a * x * exp(x)
+        f1_deriv_1(x) = diff(f1, x)
+        f1_deriv_2(x) = diff(f1_deriv_1, x)
+        f1_deriv_3(x) = diff(f1_deriv_2, x)
     $ f(x) = f1 $
 
     $ f'(x) = $ #f1_deriv_1
@@ -173,11 +173,11 @@ EXERCISE Stationäre Stellen
 
 EXERCISE Stationäre Stellen
     CODE
-        let a:b = rand(3,5)
-        let f1(x) = a * x^2 + b
-        let f1_deriv_1(x) = diff(f1, x)
-        let f1_deriv_2(x) = diff(f1_deriv_1, x)
-        let s = 0
+        a:b = rand(3,5)
+        f1(x) = a * x^2 + b
+        f1_deriv_1(x) = diff(f1, x)
+        f1_deriv_2(x) = diff(f1_deriv_1, x)
+        s = 0
     Sei $ f(x) = f1 $. Bestimme die stationäre Stelle: $x_0=$ #s
     Dann besitzt $f$ in $x_0$:
     ( ) ein lokales Maximum
@@ -191,13 +191,13 @@ EXERCISE Krümmung
 
 EXERCISE Taylorpolynom
     CODE
-        let f(x) = exp(x)
-        let x0 = 0
-        let f1(x) = diff(f, x)
-        let f2(x) = diff(f1, x)
-        let p0(x) = f(x0) / fac(0) * (x - x0)^0
-        let p1(x) = f1(x0) / fac(1) * (x - x0)^1
-        let p2(x) = f2(x0) / fac(2) * (x - x0)^2
+        f(x) = exp(x)
+        x0 = 0
+        f1(x) = diff(f, x)
+        f2(x) = diff(f1, x)
+        p0(x) = f(x0) / fac(0) * (x - x0)^0
+        p1(x) = f1(x0) / fac(1) * (x - x0)^1
+        p2(x) = f2(x0) / fac(2) * (x - x0)^2
     Bestimme das zweite Taylorpolynom $p_2(x) = \sum_{k=0}^2 \frac{ "f"^{(k)}(x_0) }{ k } (x-x_0)^k $ für $"f"(x)=f$ und $x_0=0$:
     - $ p_0(x) =$ #p0
     - $ p_1(x) =$ #p1
@@ -205,15 +205,15 @@ EXERCISE Taylorpolynom
 
 EXERCISE Taylorpolynom
     CODE
-        let f(x) = sin(x)
-        let x0 = 0
-        let f1(x) = diff(f, x)
-        let f2(x) = diff(f1, x)
-        let f3(x) = diff(f2, x)
-        let p0(x) = f(x0) / fac(0) * (x - x0)^0
-        let p1(x) = f1(x0) / fac(1) * (x - x0)^1
-        let p2(x) = f2(x0) / fac(2) * (x - x0)^2
-        let p3(x) = f3(x0) / fac(3) * (x - x0)^3
+        f(x) = sin(x)
+        x0 = 0
+        f1(x) = diff(f, x)
+        f2(x) = diff(f1, x)
+        f3(x) = diff(f2, x)
+        p0(x) = f(x0) / fac(0) * (x - x0)^0
+        p1(x) = f1(x0) / fac(1) * (x - x0)^1
+        p2(x) = f2(x0) / fac(2) * (x - x0)^2
+        p3(x) = f3(x0) / fac(3) * (x - x0)^3
     Bestimme das dritte Taylorpolynom $p_3(x) = \sum_{k=0}^3 \frac{ "f"^{(k)}(x_0) }{ k } (x-x_0)^k $ für $"f"(x)=f$ und $x_0=0$:
     - $ p_0(x) = $ #p0
     - $ p_1(x) = $ #p1
@@ -222,15 +222,15 @@ EXERCISE Taylorpolynom
 
 EXERCISE Taylorpolynom
     CODE
-        let f(x) = cos(x)
-        let x0 = 0
-        let f1(x) = diff(f, x)
-        let f2(x) = diff(f1, x)
-        let f3(x) = diff(f2, x)
-        let p0(x) = f(x0)  / fac(0) * (x - x0)^0
-        let p1(x) = f1(x0) / fac(1) * (x - x0)^1
-        let p2(x) = f2(x0) / fac(2) * (x - x0)^2
-        let p3(x) = f3(x0) / fac(3) * (x - x0)^3
+        f(x) = cos(x)
+        x0 = 0
+        f1(x) = diff(f, x)
+        f2(x) = diff(f1, x)
+        f3(x) = diff(f2, x)
+        p0(x) = f(x0)  / fac(0) * (x - x0)^0
+        p1(x) = f1(x0) / fac(1) * (x - x0)^1
+        p2(x) = f2(x0) / fac(2) * (x - x0)^2
+        p3(x) = f3(x0) / fac(3) * (x - x0)^3
     Bestimme das dritte Taylorpolynom $p_3(x) = \sum_{k=0}^3 \frac{ "f"^{(k)}(x_0) }{ k } (x-x_0)^k $ für $"f"(x)=f$ und $x_0=0$:
     - $ p_0(x) = $ #p0
     - $ p_1(x) = $ #p1

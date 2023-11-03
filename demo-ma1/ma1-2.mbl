@@ -3,17 +3,17 @@ Elementare Funktionen
 
 EXERCISE Polynome
     CODE
-        let n:u = rand(4,8)
-        let grad = n + u
+        n:u = rand(4,8)
+        grad = n + u
     Sei $ f : \RR \to \RR $ , $ f(x) = \sum_{k=0}^n a_{k} x^{k+u} $ mit $ a_n, ..., a_1, a_0 \in \RR $ und $a_n \neq 0$
     Das Polynom $f$ hat den Grad #grad
 
 EXERCISE Nullstellen
     CODE
-        let a:b:u = rand(3,6)
-        let v = u * (a + b)
-        let w = u * (a * b)
-        let r = {a,b}
+        a:b:u = rand(3,6)
+        v = u * (a + b)
+        w = u * (a * b)
+        r = {a,b}
     Bestimme die Nullstellen von $ f(x) = u \cdot x^2 - v \cdot x + w $:
     - #r
 
@@ -33,7 +33,7 @@ EXERCISE Rechenregeln für Potenzen
 
 EXERCISE Exponentialfunktion
     CODE
-        let a:b = rand(2,8)
+        a:b = rand(2,8)
     Gegeben sei die Funktion $ f : \RR \to \RR, x \mapsto e^{-a \cdot x+b} $.
     Welche der folgenden Aussagen sind wahr?
     [ ] $f$ ist streng monoton steigend

@@ -4,10 +4,10 @@ Folgen, Reihen und Stetigkeit
 
 EXERCISE Reelle Folgen
     CODE
-        let x = rand(2,5)
-        let a1 = x/2
-        let a2 = 2*x/3
-        let a3 = 3*x/4
+        x = rand(2,5)
+        a1 = x/2
+        a2 = 2*x/3
+        a3 = 3*x/4
     Bestimme die ersten drei Glieder der reellen Folge $ (a_n)_{n \in \NN} = \left( \frac{x\cdot n}{n+1} \right)_{n \in \NN} $
     - $n=1:$ #a1
     - $n=2:$ #a2
@@ -15,10 +15,10 @@ EXERCISE Reelle Folgen
 
 EXERCISE Rekursiv definierte Folgen
     CODE
-        let x:y:z = rand(2,5)
-        let a1 = z
-        let a2 = x*a1 + y
-        let a3 = x*a2 + y
+        x:y:z = rand(2,5)
+        a1 = z
+        a2 = x*a1 + y
+        a3 = x*a2 + y
     Bestimme die ersten drei Glieder der *rekursiv* definierten Folge $(a_n)_{n \in \NN}$ mit $ a_1 = z, a_{n+1} = x \cdot a_n + y $
     - $n=1:$ #a1
     - $n=2:$ #a2
@@ -26,11 +26,11 @@ EXERCISE Rekursiv definierte Folgen
 
 EXERCISE Konvergenz von Folgen
     CODE
-        let x:y:z = rand(2,5)
-        let u:v:w = rand(2,5)
-        let res1 = 0
-        let res2 = x / y
-        let res3 = x / u
+        x:y:z = rand(2,5)
+        u:v:w = rand(2,5)
+        res1 = 0
+        res2 = x / y
+        res3 = x / u
     Bestimme:
     - $ \lim_{n \to \infty} \frac{x}{n}=$ #res1
     - $ \lim_{n \to \infty} \frac{x \cdot n}{y \cdot n+z}=$ #res2
@@ -43,14 +43,14 @@ EXERCISE Konvergenz von Folgen
 
 EXERCISE Häufungspunkte
     CODE
-        let x:y:z = rand(2,5)
+        x:y:z = rand(2,5)
     Welche der Folgen besitzt **zwei** Häufungspunkte?
     [x] $ (a_n)_{n \in \NN} $ mit $ a_n = (-1)^n ~ \frac{n^2-x}{n^2-y} $
     [ ] $ (a_n)_{n \in \NN} $ mit $ a_n = 1^n ~ \frac{n^2-x}{n^2-y} $
 
 EXERCISE Konvergente Folgen
     CODE
-        let x:y:z:w = rand(2,5)
+        x:y:z:w = rand(2,5)
     Welche der folgenden Folgen sind **konvergent**?
     [x] $ (a_n)_{n \in \NN} $ mit $ a_n = x $
     [ ] $ (a_n)_{n \in \NN} $ mit $ a_n = x \cdot n $
@@ -59,7 +59,7 @@ EXERCISE Konvergente Folgen
 
 EXERCISE Bestimmt divergent
     CODE
-        let x:y:z:w = rand(2,5)
+        x:y:z:w = rand(2,5)
     Welche der folgenden Folgen sind **bestimmt divergent**?
     [x] $ (a_n)_{n \in \NN} $ mit $ a_n = x \cdot n $
     [x] $ (a_n)_{n \in \NN} $ mit $ a_n = \frac{x \cdot n^5+y \cdot n}{z \cdot n^4+w} $
@@ -67,7 +67,7 @@ EXERCISE Bestimmt divergent
 
 EXERCISE Unbestimmt divergent
     CODE
-        let x:y:z:w:u = rand(2,5)
+        x:y:z:w:u = rand(2,5)
     Welche der folgenden Folgen sind **unbestimmt divergent**?
     [x] $ (a_n)_{n \in \NN} $ mit $ a_n = (-1)^n \cdot x $
     [ ] $ (a_n)_{n \in \NN} $ mit $ a_n = \left| x - \frac{y \cdot n}{x \cdot n+z} \right| $
@@ -75,27 +75,27 @@ EXERCISE Unbestimmt divergent
 
 EXERCISE Geometrische Reihe
     CODE
-        let x = rand(2,5)
-        let q = 1/x
-        let res = 1/(1-q)
+        x = rand(2,5)
+        q = 1/x
+        res = 1/(1-q)
     Bestimme $ \sum_{k=0}^{\infty} \left(\frac{1}{x}\right)^k $
     - #res
 
 EXERCISE Geometrische Reihe
     CODE
-        let x = rand(2,5)
-        let q = 1/x
-        let res = 1/(1-q) - 1 - q
+        x = rand(2,5)
+        q = 1/x
+        res = 1/(1-q) - 1 - q
     Bestimme $ \sum_{k=2}^{\infty} \left(\frac{1}{x}\right)^k $
     - #res
 
 EXERCISE Potenzreihe
     CODE
-        let a:b = rand(2,4)
-        let x = 1/b
-        let k0 = 1 / fac(0) * (a*x)^0
-        let k1 = 1 / fac(1) * (a*x)^1
-        let k2 = 1 / fac(2) * (a*x)^2
+        a:b = rand(2,4)
+        x = 1/b
+        k0 = 1 / fac(0) * (a*x)^0
+        k1 = 1 / fac(1) * (a*x)^1
+        k2 = 1 / fac(2) * (a*x)^2
     Geben Sie die ersten **drei Summanden der Potenzreihe** von $ e^{a \cdot "x"} $ an. Weiterhin sei $ "x" = \frac{1}{b} $:
     - $ k=0: $ #k0
     - $ k=1: $ #k1
@@ -103,18 +103,18 @@ EXERCISE Potenzreihe
 
 EXERCISE Konvergenzradius
     CODE
-        let a = rand(3,8)
-        let r = 1/a
+        a = rand(3,8)
+        r = 1/a
     Bestimmen Sie den Konvergenzradius $R$ der Potenzreihe $ \sum_{k=0}^{\infty} a^k \cdot x^k $:
     * $R=$ #r
 
 EXERCISE Grenzwerte
     CODE 
-        let a:b:c = rand(3,8)
-        let u:v = rand(2,4)
-        let res1 = a
-        let res2 = 0
-        let res3 = u^v
+        a:b:c = rand(3,8)
+        u:v = rand(2,4)
+        res1 = a
+        res2 = 0
+        res3 = u^v
     Bestimme die folgenden Grenzwerte:
     - $ \lim_{x \to \infty} \frac{a \cdot x-b}{x}=$ #res1
     - $ \lim_{x \to -\infty} e^{c \cdot x}=$ #res2
@@ -122,14 +122,14 @@ EXERCISE Grenzwerte
 
 EXERCISE Stetigkeit
     CODE
-        let a1:b1:c1:d1 = rand(3,8)
-        let a2:b2 = rand(3,8)
-        let a3 = rand(3,8)
-        let a4:b4:c4 = rand(3,8)
-        let a5:b5 = rand(3,8)
-        let a6:b6 = rand(3,8)
-        let a7:b7 = rand(2,4)
-        let c7 = rand(5,7)
+        a1:b1:c1:d1 = rand(3,8)
+        a2:b2 = rand(3,8)
+        a3 = rand(3,8)
+        a4:b4:c4 = rand(3,8)
+        a5:b5 = rand(3,8)
+        a6:b6 = rand(3,8)
+        a7:b7 = rand(2,4)
+        c7 = rand(5,7)
     Welche der folgenden Funktionen sind auf ganz $\RR$ stetig?
     [x] $f(x) = a1 \cdot x^3 + b1 \cdot x^2 + c1 \cdot x + d1$
     [x] $f(x) = a2 \cdot \sin(b2 \cdot x)$
@@ -141,14 +141,14 @@ EXERCISE Stetigkeit
 
 EXERCISE Stetigkeit
     CODE
-        let a:b = rand(2,5)
-        let c = rand(6,8)
+        a:b = rand(2,5)
+        c = rand(6,8)
     An welcher Stelle $x_0 \in \RR$ ist $f(x)=\frac{ (x-a) \cdot (x-b) }{ x-c }$ **unstetig**?
     - $x_0=$ #c
 
 EXERCISE Asymptote
     CODE
-        let m:b:c:d = rand(2,8)
+        m:b:c:d = rand(2,8)
     Bestimmen Sie die Asymptote $ y = "m" \cdot x+"b" $, welche die Funktion $ f(x) = m \cdot x + b - \frac{c \cdot x}{d \cdot x^2} $ für $x \to \infty$ annähert:
     - $"m"=$ #m
     - $"b"=$ #b

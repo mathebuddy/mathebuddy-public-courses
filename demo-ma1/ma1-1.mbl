@@ -6,9 +6,9 @@ Mengen
 
 EXERCISE Mengen
     CODE
-        let a/b/c = rand(1,5)
-        let A = {a, b, c}
-        let B = {a, c}
+        a/b/c = rand(1,5)
+        A = {a, b, c}
+        B = {a, c}
     Gegeben sei die Menge $"A"=A$.
 
     Ist die folgende Aussage wahr?
@@ -16,9 +16,9 @@ EXERCISE Mengen
 
 EXERCISE Mengen
     CODE
-        let a/b/c/d = rand(1,10)
-        let A = {a, a+b, a+b+c, a+b+c+d}
-        let p = 2^len(A)
+        a/b/c/d = rand(1,10)
+        A = {a, a+b, a+b+c, a+b+c+d}
+        p = 2^len(A)
     Sei $"A"=A$.
 
     Wie viele Elemente hat die **Potenzmenge** $P("A")$?
@@ -32,25 +32,25 @@ EXERCISE Mengenoperationen
 
 EXERCISE Menge
     CODE
-        let a/b/c = rand(1,5)
-        let n = 2
+        a/b/c = rand(1,5)
+        n = 2
     Wie viele Elemente hat die Menge $\{\{a,b\},\{c\}\}$?
 
     #n
 
 EXERCISE Mengen
     CODE
-        let a/b/c = rand(1,10)
-        let x = max({a,b,c}) + 4
-        let A = {a,b,c}
+        a/b/c = rand(1,10)
+        x = max({a,b,c}) + 4
+        A = {a,b,c}
     Gegeben Sei die Menge $"A"=A$. Welche der folgenden Aussagen sind wahr?
     [x] $ a \in "A" $
     [x] $ x \notin "A" $
 
 EXERCISE Mengen
     CODE
-        let a = rand(1,5)
-        let B = {a,a*2,a*3}
+        a = rand(1,5)
+        B = {a,a*2,a*3}
     Gegeben Sei die Menge $ "B" = \{ k \in \NN | k=a \cdot n ~\text{und}~ n \leq 3 \} $. Geben Sie die Menge **explizit** an:
 
     $"B"=$ #B
@@ -60,44 +60,44 @@ Summen und Produkte
 
 EXERCISE Summe
     CODE
-        let a = rand(2,4)
-        let n = rand(3,5)
-        let s = a * n
+        a = rand(2,4)
+        n = rand(3,5)
+        s = a * n
     Berechne $\sum_{i=1}^n a$:
 
     #s
 
 EXERCISE Summe
     CODE
-        let a = rand(2,4)
-        let n = 3
-        let s = a * 6
+        a = rand(2,4)
+        n = 3
+        s = a * 6
     Berechne $\sum_{i=1}^n a \cdot i$:
 
     #s
 
 EXERCISE Produkt
     CODE
-        let a = rand(2,4)
-        let n = rand(3,5)
-        let p = a^n
+        a = rand(2,4)
+        n = rand(3,5)
+        p = a^n
     Berechne $\prod_{i=1}^n a$:
 
     #p
 
 EXERCISE Fakultät
     CODE
-        let a = rand(3,6)
-        let f = fac(a)
+        a = rand(3,6)
+        f = fac(a)
     Gebe $a!$ wertmäßig an:
 
     #f
 
 EXERCISE Binomialkoeffizient
     CODE
-        let n = rand(3,5)
-        let k = rand(0,n)
-        let b = binomial(n,k)
+        n = rand(3,5)
+        k = rand(0,n)
+        b = binomial(n,k)
     Bestimme den Binomialkoeffizienten $\begin{pmatrix}n\\k\end{pmatrix}$ mit Hilfe des **Pascalschen Dreiecks**.
 
     #b
@@ -119,13 +119,13 @@ EXERCISE Supremum, Infimum
 
 EXERCISE Beschränkte Mengen
     CODE
-        let a = rand(-5,-2)
-        let b = a + 3
-        let x/y = rand(1,3)
-        let c = b + x
-        let d = c + y
-        let m = a
-        let M = d
+        a = rand(-5,-2)
+        b = a + 3
+        x/y = rand(1,3)
+        c = b + x
+        d = c + y
+        m = a
+        M = d
     Sei $ X = [a, c[ \cup [b, d[ $.
     Bestimmen Sie:
     - Infimum m = inf $(X)=$ #m
@@ -137,8 +137,8 @@ EXERCISE Beschränkte Mengen
 
 EXERCISE Betrag
     CODE
-        let a = rand(-10,-1)
-        let b = abs(a)
+        a = rand(-10,-1)
+        b = abs(a)
     $|a|=$ #b
     Wähle die richtigen Antworten aus:
     [x]   $ |xy| = |x| |y| $
@@ -152,7 +152,7 @@ EXERCISE Aussagenlogik
 
 EXERCISE Aussagenlogik
     CODE
-        let a:b:c:d = rand(3,5)
+        a:b:c:d = rand(3,5)
     Welche der folgenden Ausdrücke sind **wahre Aussagen**?
     [ ] Die Menge $M=\{k \in \NN | k=2 m ~\text{und}~ m>3 \}$ hat 3 Elemente.
     [ ] $a + b \cdot c$.
@@ -168,7 +168,7 @@ EXERCISE Aussagenlogik
 
 EXERCISE Injektivität, Surjektivität, Bijektivität
     CODE
-        let a = rand(2,10)
+        a = rand(2,10)
     Betrachten Sie die folgende Abbildung und wählen Sie die richtigen Antworten aus:
     $ f : \RR \to [a,\infty[, ~~  f(x) = x^2 + a $
     [ ] $f$ ist injektiv.
@@ -177,7 +177,7 @@ EXERCISE Injektivität, Surjektivität, Bijektivität
 
 EXERCISE Verkettung von Funktionen
     CODE
-        let a:b:c = rand(2,5)
+        a:b:c = rand(2,5)
     Sei  $ f : \RR \to \RR $, $ f(x) = a \cdot x + b $ und $ g : \RR \to \RR, g(x) = x^c $.
     Wähle die richtige Antwort aus:
     (x) $ (g \circ f)(x) = (a \cdot x + b)^c $
@@ -192,7 +192,7 @@ EXERCISE Gerade und ungerade Funktionen
 
 EXERCISE Beschränktheit
     CODE
-        let a = rand(2,5)
+        a = rand(2,5)
     Sei $ f : \RR \to \RR, x \mapsto (x+a)^2 $.
     Wählen Sie die richtigen Antworten aus:
     [x] $f$ ist nach **unten beschränkt**.
@@ -200,7 +200,7 @@ EXERCISE Beschränktheit
 
 EXERCISE Monotonie
     CODE
-        let a:b:c:d = rand(2,5)
+        a:b:c:d = rand(2,5)
     Wählen Sie die richtigen Antworten aus:
     [x] $ f : \RR \to \RR, f(x)=a $ ist **monoton wachsend**.
     [x] $ f : \RR \to \RR, f(x)=b x + c $ ist **streng monoton wachsend**.

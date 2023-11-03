@@ -5,7 +5,7 @@ Differentialgleichungen
 
 EXERCISE DGL erster Ordnung mit trennbaren Variablen
     CODE
-        let a = rand(2,5)
+        a = rand(2,5)
         %TODO: let y(x) = ode( diff(y,x), - a * x^2/y )
     Löse die folgende DGL: $y$:
     - $"y"(x) = \pm$ #y
