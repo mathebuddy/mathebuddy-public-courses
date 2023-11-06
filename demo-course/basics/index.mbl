@@ -9,9 +9,9 @@ OPTIONS
 AUTHOR 
     TH Koeln
 
-UNIT My Unit A
+UNIT My Unit A                    ICON icons/unit-a.svg
     (0,0) a-start                 ICON icons/start.svg
-    %(1,0) a-fun  !a-start
+    (1,0) a-fun  !a-start
     (1,1) a-bla  !a-fun
 
 UNIT My Unit B
