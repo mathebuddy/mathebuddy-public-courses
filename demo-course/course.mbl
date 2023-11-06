@@ -4,9 +4,9 @@ TITLE
     A Short Demo Course
 
 AUTHOR 
-    TH Koeln
+    TH Köln
 
 CHAPTERS
-    (0,0) basics
-    (2,0) essentials  !basics
+    (0,0) basics                            ICON icons/basics.svg
+    (2,0) essentials  !basics               ICON icons/essentials.svg
     (1,1) advanced    !basics !essentials
