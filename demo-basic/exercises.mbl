@@ -119,7 +119,7 @@ EXERCISE Simple Integration  @ex:intSimple
     CODE
         a = rand(3,7)
         f(x) = (1/3) * x^3 + a*x
-    Solve $\int (x^2+a) dx = $  #f,TOKENS=1.0+"pi"  $+C$
+    Solve $\int (x^2+a)~dx = $  #f,TOKENS=1.0+"pi"  $+C$
 
 
 Scoring
