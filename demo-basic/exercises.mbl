@@ -51,7 +51,12 @@ EXERCISE Addition  @ex:add
     CODE
         x/y = rand(1, 5)
         z = x + y
-    Calculate $ x + y = $ #z.
+        u/v = rand(10, 20)
+        w = u + v
+    - Calculate $ x + y = $ #z.
+    - Calculate $ u + v = $ #w.
+
+
 
 EXERCISE Matrix Multiplication @ex:add-mul
     CODE
