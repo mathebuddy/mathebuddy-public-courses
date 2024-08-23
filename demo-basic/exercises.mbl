@@ -131,7 +131,7 @@ Scoring
 =======
 
 EXERCISE Scoring example
-    SCORES=5        % total score of the exercise (5/3 for fa; 10/3 for fb)
+    SCORE=5        % total score of the exercise (5/3 for fa; 10/3 for fb)
     CODE
         a = rand(2, 4)
         b = rand(5, 6)
@@ -140,6 +140,28 @@ EXERCISE Scoring example
     Calculate
     -) $ a! = $ #fa            % if scores are not given for a solution,
     -) $ b! = $ #fb,SCORE=2    % it defaults to 1, i.e. fa has score 1
+
+
+EXERCISE Scoring example 2
+    SCORE=5
+    CODE
+        xa = 1
+        xb = 2
+        xc = 3
+        xd = 4
+        xe = 5
+        fa = fac(xa)
+        fb = fac(xb)
+        fc = fac(xc)
+        fd = fac(xd)
+        fe = fac(xe)
+    Calculate
+    -) $ xa! = $ #fa,SCORE=1
+    -) $ xb! = $ #fb,SCORE=2
+    -) $ xc! = $ #fc,SCORE=3
+    -) $ xd! = $ #fd,SCORE=4
+    -) $ xe! = $ #fe,SCORE=5
+
 
 
 Gap Exercise
